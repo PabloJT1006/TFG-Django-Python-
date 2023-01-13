@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="title_wrapper">
+            <h2>Alvaro Leinen</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">Portafolio</a>
+                </li>
+                <li>
+                    <a href="">Experincia</a>
+                </li>
+                <li>
+                    <a href="">contacto</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div id="block">
+        
+            
+        {% block content %}
+            <!-- contenido que viene de los templates -->
+        {% endblock %}
+            
+    </div>
+
+
+    <footer>
+        hola klk
+    </footer>
+
+
+</body>
+</html>
