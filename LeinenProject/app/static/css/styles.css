@@ -1,13 +1,14 @@
 /* line 1, ../../templates/sass/generic/_header.scss */
 header {
   width: 100%;
-  margin: 0px auto;
+  margin: 10px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  z-index: 1;
 }
-/* line 9, ../../templates/sass/generic/_header.scss */
+/* line 10, ../../templates/sass/generic/_header.scss */
 header nav {
   display: block;
   height: fit-content;
@@ -17,35 +18,35 @@ header nav {
   justify-content: center;
   align-items: center;
 }
-/* line 20, ../../templates/sass/generic/_header.scss */
+/* line 21, ../../templates/sass/generic/_header.scss */
 header nav ul {
   display: block;
   float: right;
   list-style: none;
   text-decoration: none;
 }
-/* line 27, ../../templates/sass/generic/_header.scss */
+/* line 28, ../../templates/sass/generic/_header.scss */
 header nav ul li {
   line-height: 40px;
   float: left;
 }
-/* line 33, ../../templates/sass/generic/_header.scss */
+/* line 34, ../../templates/sass/generic/_header.scss */
 header nav ul li a {
   display: block;
   padding: 0 35px;
   color: black;
   transition: all .6s;
 }
-/* line 39, ../../templates/sass/generic/_header.scss */
+/* line 40, ../../templates/sass/generic/_header.scss */
 header nav ul li a:hover {
   border-bottom: 1px solid red;
 }
-/* line 51, ../../templates/sass/generic/_header.scss */
+/* line 52, ../../templates/sass/generic/_header.scss */
 header .title_wrapper {
   padding: 0px 85px;
   /*logo title*/
 }
-/* line 56, ../../templates/sass/generic/_header.scss */
+/* line 57, ../../templates/sass/generic/_header.scss */
 header .title_wrapper h1 {
   display: block;
   letter-spacing: 2px;
@@ -77,6 +78,27 @@ footer {
   padding-bottom: 10px;
   padding-top: 10px;
   box-shadow: 0px 0px 20px;
+  display: block;
+  justify-content: center;
+}
+/* line 14, ../../templates/sass/generic/_footer.scss */
+footer div {
+  margin: 0 auto;
+  width: 30%;
+  margin-top: 10px;
+}
+/* line 20, ../../templates/sass/generic/_footer.scss */
+footer .social {
+  width: 50%;
+  font-size: 30px;
+}
+/* line 24, ../../templates/sass/generic/_footer.scss */
+footer .social a {
+  margin: auto 10px;
+}
+/* line 27, ../../templates/sass/generic/_footer.scss */
+footer .social a i {
+  color: #d1d4d6;
 }
 
 /* line 1, ../../templates/sass/generic/_content.scss */
@@ -85,5 +107,21 @@ footer {
   min-height: 930px;
   margin: 0 auto;
   margin-bottom: 30px;
-  margin-top: 40px;
+  position: relative;
+}
+
+/* line 3, ../../templates/sass/specific/_home.scss */
+#block .banner_home {
+  width: 100%;
+  height: 640px;
+  margin: 0 auto;
+  background-image: url("../../static/images/hamood.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* line 13, ../../templates/sass/specific/_home.scss */
+#block .description {
+  height: 530px;
+  background-color: purple;
 }
