@@ -1,18 +1,23 @@
 header{
     width: 100%;
     margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     z-index: 1;
     transition: all .4s;
+    color:#d1d4d6;
 
 
     &.solid{
         background-color:#d1d4d6 ;
+        color: black;
+        
+        ul li a{
+            color:black;
+        }
     }
 
     nav{
@@ -21,29 +26,21 @@ header{
         font-size: 15px;
 
         ul{
-            // background-color: green;
-
             list-style: none;
             text-decoration: none;
     
             li{
-                // background-color: red;
                 line-height: 40px;
                 float: left;
-
+                
+                &:hover{
+                    border-bottom:1px solid red;
+                    
+                }
     
                 a{
-                    display: block;
                     padding: 0px 35px; 
-                    color: black;
-                    
-    
-                    &:hover{
-                        border-bottom:1px solid red;
-                        // box-shadow: 1px #444 inset ;
-                        
-                    }
-    
+                    color: #d1d4d6;
                 }
             }
         }
