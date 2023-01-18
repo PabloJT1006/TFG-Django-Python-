@@ -2,7 +2,7 @@
 header {
   width: 100%;
   margin: 0 auto;
-  height: 80px;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,46 +11,49 @@ header {
   transition: all .4s;
   color: #d1d4d6;
 }
-/* line 14, ../../templates/sass/generic/_header.scss */
+/* line 15, ../../templates/sass/generic/_header.scss */
 header.solid {
   background-color: #d1d4d6;
+  opacity: .9;
   color: black;
 }
-/* line 18, ../../templates/sass/generic/_header.scss */
+/* line 20, ../../templates/sass/generic/_header.scss */
 header.solid ul li a {
   color: black;
 }
-/* line 23, ../../templates/sass/generic/_header.scss */
+/* line 25, ../../templates/sass/generic/_header.scss */
 header nav {
   height: fit-content;
-  padding-right: 150px;
+  padding-right: 65px;
   font-size: 15px;
 }
-/* line 28, ../../templates/sass/generic/_header.scss */
+/* line 30, ../../templates/sass/generic/_header.scss */
 header nav ul {
   list-style: none;
   text-decoration: none;
 }
-/* line 32, ../../templates/sass/generic/_header.scss */
+/* line 34, ../../templates/sass/generic/_header.scss */
 header nav ul li {
   line-height: 40px;
   float: left;
 }
-/* line 36, ../../templates/sass/generic/_header.scss */
+/* line 38, ../../templates/sass/generic/_header.scss */
 header nav ul li:hover {
   border-bottom: 1px solid red;
 }
-/* line 41, ../../templates/sass/generic/_header.scss */
+/* line 43, ../../templates/sass/generic/_header.scss */
 header nav ul li a {
   padding: 0px 35px;
   color: #d1d4d6;
+  font-weight: bold;
+  font-size: 17px;
 }
-/* line 50, ../../templates/sass/generic/_header.scss */
+/* line 54, ../../templates/sass/generic/_header.scss */
 header .title_wrapper {
   padding: 0px 85px;
   /*logo title*/
 }
-/* line 55, ../../templates/sass/generic/_header.scss */
+/* line 59, ../../templates/sass/generic/_header.scss */
 header .title_wrapper h1 {
   display: block;
   letter-spacing: 2px;
@@ -117,15 +120,58 @@ footer .social a i {
 /* line 3, ../../templates/sass/specific/_home.scss */
 #block .banner_home {
   width: 100%;
-  height: 640px;
+  height: 900px;
   margin: 0 auto;
-  background-image: url("../../static/images/hamood.png");
+  background-image: url("../../static/images/banner_home.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-position: center;
 }
 /* line 13, ../../templates/sass/specific/_home.scss */
-#block .description {
+#block .desc_wrapper {
   height: 530px;
-  background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #37322E;
+}
+/* line 20, ../../templates/sass/specific/_home.scss */
+#block .desc_wrapper .content {
+  height: 300px;
+  width: 50%;
+  text-align: center;
+}
+/* line 26, ../../templates/sass/specific/_home.scss */
+#block .desc_wrapper .content .icon {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+}
+/* line 32, ../../templates/sass/specific/_home.scss */
+#block .desc_wrapper .content .desc {
+  width: fit-content;
+  height: fit-content;
+  margin: 50px auto;
+  font-size: 22px;
+  line-height: 30px;
+  color: white;
+}
+/* line 41, ../../templates/sass/specific/_home.scss */
+#block .desc_wrapper .content .desc .subtitle {
+  margin-top: 30px;
+}
+
+/* line 2, ../../templates/sass/specific/_about.scss */
+#block .cont_wrapper {
+  background-color: #aca8a8;
+  height: 606px;
+  display: flex;
+}
+/* line 6, ../../templates/sass/specific/_about.scss */
+#block .cont_wrapper .image {
+  background-color: aqua;
+}
+/* line 10, ../../templates/sass/specific/_about.scss */
+#block .cont_wrapper .desc_wrapper {
+  background-color: #f1d3d8;
 }

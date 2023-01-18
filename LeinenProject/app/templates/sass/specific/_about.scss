@@ -1,0 +1,31 @@
+#block{
+    .cont_wrapper{
+        background-color: rgb(172, 168, 168);
+        height: 606px;
+        display:flex;
+        .image{
+            background-color: aqua;
+        }
+
+        .desc_wrapper{
+            background-color: rgb(241, 211, 216);
+
+            .title{
+                h1{
+
+                }
+            }
+
+            .subtitle{
+                h3{
+
+                }
+            }
+
+            .description{
+
+            }
+        }
+    }
+}
+

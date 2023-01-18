@@ -1,7 +1,7 @@
 header{
     width: 100%;
     margin: 0 auto;
-    height: 80px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,10 +9,12 @@ header{
     z-index: 1;
     transition: all .4s;
     color:#d1d4d6;
+    // font-weight: 300;
 
 
     &.solid{
         background-color:#d1d4d6 ;
+        opacity: .9;
         color: black;
         
         ul li a{
@@ -22,7 +24,7 @@ header{
 
     nav{
         height:fit-content;
-        padding-right: 150px;
+        padding-right: 65px;
         font-size: 15px;
 
         ul{
@@ -41,6 +43,8 @@ header{
                 a{
                     padding: 0px 35px; 
                     color: #d1d4d6;
+                    font-weight: bold;
+                    font-size: 17px;
                 }
             }
         }
@@ -66,6 +70,7 @@ header{
     
     
 }
+
 
 
 

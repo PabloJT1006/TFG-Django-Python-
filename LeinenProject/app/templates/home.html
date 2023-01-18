@@ -1,5 +1,6 @@
+
 {% extends 'layout.html' %}
-!
+{% load static %}
 
 {% block content %}
 <body class="home">
@@ -7,8 +8,21 @@
         BANNER-HOME
     </div>
     
-    <div class="description">
-        CONTENIDO HOME DOS
+    <div class="desc_wrapper">
+        <div class="content">
+            <div class="icon">
+                <img src="{% static 'images/comillas.png' %}" alt="">
+            </div>
+            <div class="desc">
+                <p>"Create images, sounds and sensations in a symbiosis. <br>
+
+                    Our purpose is to create sensations with art"</p>
+                <div class="subtitle">
+                    <p>-Leinen Vision-</p>
+                </div>
+            </div>
+        </div>
+        
     </div>
 </body>
     
