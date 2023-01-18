@@ -8,19 +8,11 @@ header{
     position: fixed;
     z-index: 1;
     transition: all .4s;
-    color:#d1d4d6;
+    color:black;
+    background-color: #d1d4d6;
     // font-weight: 300;
 
 
-    &.solid{
-        background-color:#d1d4d6 ;
-        opacity: .9;
-        color: black;
-        
-        ul li a{
-            color:black;
-        }
-    }
 
     nav{
         height:fit-content;
@@ -36,16 +28,23 @@ header{
                 float: left;
                 
                 &:hover{
-                    border-bottom:1px solid red;
+                    border:1px solid red;
+                    background-color: #d1d4d6;
+                    opacity: .6;
+                    a{
+                        color: black;
+                    }
+                    
                     
                 }
     
                 a{
                     padding: 0px 35px; 
-                    color: #d1d4d6;
+                    color: black;
                     font-weight: bold;
                     font-size: 17px;
-                }
+                }   
+
             }
         }
     }

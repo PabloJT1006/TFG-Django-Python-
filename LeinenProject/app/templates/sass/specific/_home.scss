@@ -1,3 +1,24 @@
+.home{
+    header{
+        color:#d1d4d6;
+        transition: all .4s;
+        background-color: transparent !important;
+        
+
+        &.solid{
+            background-color:#d1d4d6 !important ;
+            opacity: .9;
+            color: black;
+            
+            a{
+                color:black;
+            }
+    }
+
+    a{
+        color: #d1d4d6;
+    }
+}
 
 #block{
     .banner_home{
@@ -45,4 +66,5 @@
             }
         }
     }
+}
 }

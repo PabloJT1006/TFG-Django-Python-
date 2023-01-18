@@ -9,51 +9,48 @@ header {
   position: fixed;
   z-index: 1;
   transition: all .4s;
-  color: #d1d4d6;
-}
-/* line 15, ../../templates/sass/generic/_header.scss */
-header.solid {
+  color: black;
   background-color: #d1d4d6;
-  opacity: .9;
-  color: black;
 }
-/* line 20, ../../templates/sass/generic/_header.scss */
-header.solid ul li a {
-  color: black;
-}
-/* line 25, ../../templates/sass/generic/_header.scss */
+/* line 17, ../../templates/sass/generic/_header.scss */
 header nav {
   height: fit-content;
   padding-right: 65px;
   font-size: 15px;
 }
-/* line 30, ../../templates/sass/generic/_header.scss */
+/* line 22, ../../templates/sass/generic/_header.scss */
 header nav ul {
   list-style: none;
   text-decoration: none;
 }
-/* line 34, ../../templates/sass/generic/_header.scss */
+/* line 26, ../../templates/sass/generic/_header.scss */
 header nav ul li {
   line-height: 40px;
   float: left;
 }
-/* line 38, ../../templates/sass/generic/_header.scss */
+/* line 30, ../../templates/sass/generic/_header.scss */
 header nav ul li:hover {
-  border-bottom: 1px solid red;
+  border: 1px solid red;
+  background-color: #d1d4d6;
+  opacity: .6;
 }
-/* line 43, ../../templates/sass/generic/_header.scss */
+/* line 34, ../../templates/sass/generic/_header.scss */
+header nav ul li:hover a {
+  color: black;
+}
+/* line 41, ../../templates/sass/generic/_header.scss */
 header nav ul li a {
   padding: 0px 35px;
-  color: #d1d4d6;
+  color: black;
   font-weight: bold;
   font-size: 17px;
 }
-/* line 54, ../../templates/sass/generic/_header.scss */
+/* line 53, ../../templates/sass/generic/_header.scss */
 header .title_wrapper {
   padding: 0px 85px;
   /*logo title*/
 }
-/* line 59, ../../templates/sass/generic/_header.scss */
+/* line 58, ../../templates/sass/generic/_header.scss */
 header .title_wrapper h1 {
   display: block;
   letter-spacing: 2px;
@@ -117,8 +114,28 @@ footer .social a i {
   position: relative;
 }
 
-/* line 3, ../../templates/sass/specific/_home.scss */
-#block .banner_home {
+/* line 2, ../../templates/sass/specific/_home.scss */
+.home header {
+  color: #d1d4d6;
+  transition: all .4s;
+  background-color: transparent !important;
+}
+/* line 8, ../../templates/sass/specific/_home.scss */
+.home header.solid {
+  background-color: #d1d4d6 !important;
+  opacity: .9;
+  color: black;
+}
+/* line 13, ../../templates/sass/specific/_home.scss */
+.home header.solid a {
+  color: black;
+}
+/* line 18, ../../templates/sass/specific/_home.scss */
+.home header a {
+  color: #d1d4d6;
+}
+/* line 24, ../../templates/sass/specific/_home.scss */
+.home #block .banner_home {
   width: 100%;
   height: 900px;
   margin: 0 auto;
@@ -127,28 +144,28 @@ footer .social a i {
   background-size: cover;
   background-position: center;
 }
-/* line 13, ../../templates/sass/specific/_home.scss */
-#block .desc_wrapper {
+/* line 34, ../../templates/sass/specific/_home.scss */
+.home #block .desc_wrapper {
   height: 530px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #37322E;
 }
-/* line 20, ../../templates/sass/specific/_home.scss */
-#block .desc_wrapper .content {
+/* line 41, ../../templates/sass/specific/_home.scss */
+.home #block .desc_wrapper .content {
   height: 300px;
   width: 50%;
   text-align: center;
 }
-/* line 26, ../../templates/sass/specific/_home.scss */
-#block .desc_wrapper .content .icon {
+/* line 47, ../../templates/sass/specific/_home.scss */
+.home #block .desc_wrapper .content .icon {
   width: fit-content;
   height: fit-content;
   margin: 0 auto;
 }
-/* line 32, ../../templates/sass/specific/_home.scss */
-#block .desc_wrapper .content .desc {
+/* line 53, ../../templates/sass/specific/_home.scss */
+.home #block .desc_wrapper .content .desc {
   width: fit-content;
   height: fit-content;
   margin: 50px auto;
@@ -156,8 +173,8 @@ footer .social a i {
   line-height: 30px;
   color: white;
 }
-/* line 41, ../../templates/sass/specific/_home.scss */
-#block .desc_wrapper .content .desc .subtitle {
+/* line 62, ../../templates/sass/specific/_home.scss */
+.home #block .desc_wrapper .content .desc .subtitle {
   margin-top: 30px;
 }
 
