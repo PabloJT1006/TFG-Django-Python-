@@ -10,7 +10,15 @@ header{
     transition: all .4s;
     color:black;
     background-color: #d1d4d6;
+    opacity: .9;
     // font-weight: 300;
+
+    .title_wrapper{
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
 
 
 
@@ -28,11 +36,12 @@ header{
                 float: left;
                 
                 &:hover{
-                    border:1px solid red;
-                    background-color: #d1d4d6;
-                    opacity: .6;
+                    border-bottom:1px solid red;
+                    
+                    // opacity: .6;
                     a{
-                        color: black;
+                        box-shadow: 10px black;
+                        font-size: 20px;
                     }
                     
                     

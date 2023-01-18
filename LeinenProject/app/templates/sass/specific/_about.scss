@@ -2,13 +2,19 @@
     .cont_wrapper{
         background-color: rgb(172, 168, 168);
         height: 606px;
+        margin: 0 auto;
         display:flex;
+        align-items: center;
         .image{
+            width: 50%;
+            height: 100%;
             background-color: aqua;
         }
 
         .desc_wrapper{
             background-color: rgb(241, 211, 216);
+            width: 50%;
+            height: 100%;
 
             .title{
                 h1{
