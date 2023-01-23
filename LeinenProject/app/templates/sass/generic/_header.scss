@@ -9,7 +9,7 @@ header{
     z-index: 1;
     transition: all .4s;
     color:black;
-    background-color: #d1d4d6;
+    background-color: white;
     opacity: .9;
     // font-weight: 300;
 
@@ -34,6 +34,7 @@ header{
             li{
                 line-height: 40px;
                 float: left;
+                transition: all .4s;
                 
                 &:hover{
                     border-bottom:1px solid red;
@@ -52,6 +53,7 @@ header{
                     color: black;
                     font-weight: bold;
                     font-size: 17px;
+                    transition: all .4s;
                 }   
 
             }
