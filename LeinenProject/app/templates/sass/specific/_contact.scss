@@ -1,13 +1,19 @@
 .contact{
-    #block{
-        top: 126px;
+
+    overflow-x: hidden;
+
+    header{
+        position: relative;
     }
+
+
     .contact_wrapper{
         width: 90%;
         height: 646px;
         margin: 0 auto;
 
-        background-color: aqua;
+        background-color: aqua;   
         
     }
+
 }

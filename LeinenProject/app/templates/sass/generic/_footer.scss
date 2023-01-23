@@ -1,13 +1,10 @@
 footer{
     width: 100%;
-    overflow-x: hidden;
-    margin: 0 auto;
+    position: absolute;
     padding-bottom: 10px;
     padding-top: 10px;
-    position: absolute;
-    bottom: 0;
     background-color: #1b1e1f;
-    border: 1px solid #333;
+    border-top: 1px solid #333;
     color: #d1d4d6;
     text-align: center;
     

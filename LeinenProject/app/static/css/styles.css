@@ -82,33 +82,30 @@ body {
 /* line 1, ../../templates/sass/generic/_footer.scss */
 footer {
   width: 100%;
-  overflow-x: hidden;
-  margin: 0 auto;
+  position: absolute;
   padding-bottom: 10px;
   padding-top: 10px;
-  position: absolute;
-  bottom: 0;
   background-color: #1b1e1f;
-  border: 1px solid #333;
+  border-top: 1px solid #333;
   color: #d1d4d6;
   text-align: center;
 }
-/* line 14, ../../templates/sass/generic/_footer.scss */
+/* line 11, ../../templates/sass/generic/_footer.scss */
 footer div {
   margin: 0 auto;
   width: 30%;
   margin-top: 10px;
 }
-/* line 20, ../../templates/sass/generic/_footer.scss */
+/* line 17, ../../templates/sass/generic/_footer.scss */
 footer .social {
   width: 50%;
   font-size: 30px;
 }
-/* line 24, ../../templates/sass/generic/_footer.scss */
+/* line 21, ../../templates/sass/generic/_footer.scss */
 footer .social a {
   margin: auto 10px;
 }
-/* line 27, ../../templates/sass/generic/_footer.scss */
+/* line 24, ../../templates/sass/generic/_footer.scss */
 footer .social a i {
   color: #d1d4d6;
 }
@@ -189,7 +186,7 @@ footer .social a i {
 }
 /* line 6, ../../templates/sass/specific/_about.scss */
 .about #block {
-  top: 54px;
+  padding: 35px 0;
 }
 /* line 8, ../../templates/sass/specific/_about.scss */
 .about #block .section_wrapper {
@@ -257,17 +254,16 @@ footer .social a i {
   line-height: 1.88;
   font-size: 15px;
 }
-/* line 76, ../../templates/sass/specific/_about.scss */
-.about footer {
-  position: relative;
-  top: 109px;
-}
 
-/* line 2, ../../templates/sass/specific/_contact.scss */
-.contact #block {
-  top: 126px;
+/* line 1, ../../templates/sass/specific/_contact.scss */
+.contact {
+  overflow-x: hidden;
 }
 /* line 5, ../../templates/sass/specific/_contact.scss */
+.contact header {
+  position: relative;
+}
+/* line 10, ../../templates/sass/specific/_contact.scss */
 .contact .contact_wrapper {
   width: 90%;
   height: 646px;
