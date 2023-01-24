@@ -1,18 +1,62 @@
 .contact{
-
     overflow-x: hidden;
 
     header{
         position: relative;
     }
 
+    #block{
+        margin: 55px 0;
+    }
+
 
     .contact_wrapper{
-        width: 90%;
+        width: 70%;
         height: 646px;
         margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: aqua;  
+        
+        .form_wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            form{
+                width: 70%;
+                div{
+                    margin-top: 20px;
+                    width: 100%;
+                }
 
-        background-color: aqua;   
+                input,textarea{
+                    width: 100%;
+                    padding: 15px;
+                    background-color: transparent;
+                    
+                    
+                }
+    
+                label{
+                    margin-top: 10px;
+                }
+    
+                input[type=submit]{
+                    width: 25%;
+                    margin-top: 15px;
+                    right: -25px;
+                    float: right;
+                    position: relative;
+                    
+                }
+    
+    
+            }
+            
+        }
+        
         
     }
 

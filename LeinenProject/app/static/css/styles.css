@@ -186,7 +186,7 @@ footer .social a i {
 }
 /* line 6, ../../templates/sass/specific/_about.scss */
 .about #block {
-  padding: 35px 0;
+  margin: 55px 0;
 }
 /* line 8, ../../templates/sass/specific/_about.scss */
 .about #block .section_wrapper {
@@ -259,14 +259,55 @@ footer .social a i {
 .contact {
   overflow-x: hidden;
 }
-/* line 5, ../../templates/sass/specific/_contact.scss */
+/* line 4, ../../templates/sass/specific/_contact.scss */
 .contact header {
   position: relative;
 }
-/* line 10, ../../templates/sass/specific/_contact.scss */
+/* line 8, ../../templates/sass/specific/_contact.scss */
+.contact #block {
+  margin: 55px 0;
+}
+/* line 13, ../../templates/sass/specific/_contact.scss */
 .contact .contact_wrapper {
-  width: 90%;
+  width: 70%;
   height: 646px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: aqua;
+}
+/* line 22, ../../templates/sass/specific/_contact.scss */
+.contact .contact_wrapper .form_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+/* line 27, ../../templates/sass/specific/_contact.scss */
+.contact .contact_wrapper .form_wrapper form {
+  width: 70%;
+}
+/* line 29, ../../templates/sass/specific/_contact.scss */
+.contact .contact_wrapper .form_wrapper form div {
+  margin-top: 20px;
+  width: 100%;
+}
+/* line 34, ../../templates/sass/specific/_contact.scss */
+.contact .contact_wrapper .form_wrapper form input, .contact .contact_wrapper .form_wrapper form textarea {
+  width: 100%;
+  padding: 15px;
+  background-color: transparent;
+}
+/* line 42, ../../templates/sass/specific/_contact.scss */
+.contact .contact_wrapper .form_wrapper form label {
+  margin-top: 10px;
+}
+/* line 46, ../../templates/sass/specific/_contact.scss */
+.contact .contact_wrapper .form_wrapper form input[type=submit] {
+  width: 25%;
+  margin-top: 15px;
+  right: -25px;
+  float: right;
+  position: relative;
 }

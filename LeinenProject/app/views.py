@@ -1,5 +1,7 @@
 from django.shortcuts import render, redirect,HttpResponse
 from .form import FormContacto
+from django.contrib import messages
+
 
 # Create your views here.
 
@@ -18,8 +20,15 @@ def contacto_handler(request):
         if form.is_valid():
             #limpiar los datos y sacar lo introducido
             data_form=form.cleaned_data
-            
+
+            messages.success(request,f"Mensaje mandado con exito")
+
+               
+    else:
+            form=FormContacto()    
 
 
 
-    return render(request,'contacto.html')
+    return render(request,'contacto.html',{
+        'form':form
+    })

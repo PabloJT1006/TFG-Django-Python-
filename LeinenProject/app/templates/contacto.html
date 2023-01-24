@@ -2,9 +2,30 @@
 
 {% block content %}
     <body class="contact">
+    {% if messages %}
+        {% for message in messages %}
+            <div class="messages">
+                {{message}}
+            </div>
+        {% endfor %}    
+    {% endif %}
         <div class="contact_wrapper">
             <div class="form_wrapper">
-                
+                <form action="" method="POST" >
+                    {% if form.errors %}
+                        <strong class="error_label">
+                            Hay errores en el formulario
+                        </strong>
+                    {% endif %}
+
+                    {% csrf_token %}
+
+                    {{form.as_div}}
+
+                    
+                    <input type="submit" value="Mandar">
+
+                </form>
             </div>
         </div>
     </body>

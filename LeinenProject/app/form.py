@@ -15,7 +15,6 @@ class FormContacto(forms.Form):
 
         validators=[
             validators.MinLengthValidator(1,'Introduzca su nombre'),
-            validators.RegexValidator('^[A-Za-z0-9ñ ]*$',message='Introduzca su nombre')
 
         ]
     )
