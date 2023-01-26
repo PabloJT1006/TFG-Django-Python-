@@ -1,0 +1,41 @@
+.cv{
+
+    header{
+        top: 0;
+    }
+
+    #block{
+        margin: 150px 0;
+        
+        .cv_wrapper{
+            width: 80%;
+            margin: 0 auto;
+            background-color: aqua;
+            
+            
+            .studies_wrapper{
+                
+                margin: 0 auto;
+                .title_wrapper{
+                    text-align: center;
+                }
+
+                .studies{
+                    margin: 65px auto;
+                    max-width: 700px;
+
+                    h2{
+                        font-weight: 500;
+                    }
+
+                    h3{
+                        margin: 15px 0;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+    
+}

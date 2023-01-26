@@ -22,5 +22,6 @@ urlpatterns = [
     path('',app.views.home_handler,name='inicio'),
     path('home/',app.views.home_handler,name='home'),
     path('about/',app.views.about_handler,name='about'),
-    path('contacto/',app.views.contacto_handler,name='contacto')
+    path('contacto/',app.views.contacto_handler,name='contacto'),
+    path('cv/',app.views.cv_handler,name='cv'),
 ]

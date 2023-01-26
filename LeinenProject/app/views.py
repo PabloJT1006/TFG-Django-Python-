@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect,HttpResponse
 from .form import FormContacto
 from django.contrib import messages
+from app.models import *
 
 
 # Create your views here.
@@ -31,4 +32,23 @@ def contacto_handler(request):
 
     return render(request,'contacto.html',{
         'form':form
+    })
+
+
+def cv_handler(request):
+
+    education=CV.objects.filter().exclude(
+        public=False,
+        education=False
+    )
+
+    works=CV.objects.filter().exclude(
+        public=False
+    )
+    
+
+
+    return render(request,'cv.html',{
+        'articles':education,
+        'works':works
     })

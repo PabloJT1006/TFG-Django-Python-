@@ -1,0 +1,48 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+    <body class="cv">
+        
+        <div class="cv_wrapper">
+            
+            <div class="studies_wrapper">
+                <div class="title_wrapper">
+                    <h1>CV</h1>
+                    <h2>EDUCATION</h2>
+                </div>
+
+                
+                    {% for article in articles %}
+                    <div class="studies">
+                        <h2>{{article.title}}</h2>
+                        
+                        <h3>{{article.subtitle}}</h3>
+                        
+                        <p>{{article.description}}</p>
+                    </div>    
+                    {% endfor %}
+            </div>
+            <!-- <div class="studies_wrapper">
+                <div class="title_wrapper">
+                    <h1>CV</h1>
+                    <h2>EDUCATION</h2>
+                </div>
+
+                
+                    {% for article in articles %}
+                    <div class="studies">
+                        <h2>{{article.title}}</h2>
+                        
+                        <h3>{{article.subtitle}}</h3>
+                        
+                        <p>{{article.description}}</p>
+                    </div>    
+                    {% endfor %}
+            </div> -->
+
+        </div>
+        
+    </body>
+
+{% endblock content %}

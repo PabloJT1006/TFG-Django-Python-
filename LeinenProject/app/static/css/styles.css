@@ -122,21 +122,22 @@ footer .social a i {
 .home header {
   color: #d1d4d6;
   background-color: transparent !important;
+  backdrop-filter: blur(10px);
 }
-/* line 7, ../../templates/sass/specific/_home.scss */
+/* line 9, ../../templates/sass/specific/_home.scss */
 .home header.solid {
   background-color: #d1d4d6 !important;
   color: black;
 }
-/* line 11, ../../templates/sass/specific/_home.scss */
+/* line 13, ../../templates/sass/specific/_home.scss */
 .home header.solid a {
   color: black;
 }
-/* line 16, ../../templates/sass/specific/_home.scss */
+/* line 18, ../../templates/sass/specific/_home.scss */
 .home header a {
   color: #d1d4d6;
 }
-/* line 22, ../../templates/sass/specific/_home.scss */
+/* line 24, ../../templates/sass/specific/_home.scss */
 .home #block .banner_home {
   width: 100%;
   height: 900px;
@@ -146,7 +147,7 @@ footer .social a i {
   background-size: cover;
   background-position: center;
 }
-/* line 32, ../../templates/sass/specific/_home.scss */
+/* line 34, ../../templates/sass/specific/_home.scss */
 .home #block .desc_wrapper {
   height: 530px;
   display: flex;
@@ -154,19 +155,19 @@ footer .social a i {
   align-items: center;
   background-color: #37322E;
 }
-/* line 39, ../../templates/sass/specific/_home.scss */
+/* line 41, ../../templates/sass/specific/_home.scss */
 .home #block .desc_wrapper .content {
   height: 300px;
   width: 50%;
   text-align: center;
 }
-/* line 45, ../../templates/sass/specific/_home.scss */
+/* line 47, ../../templates/sass/specific/_home.scss */
 .home #block .desc_wrapper .content .icon {
   width: fit-content;
   height: fit-content;
   margin: 0 auto;
 }
-/* line 51, ../../templates/sass/specific/_home.scss */
+/* line 53, ../../templates/sass/specific/_home.scss */
 .home #block .desc_wrapper .content .desc {
   width: fit-content;
   height: fit-content;
@@ -175,7 +176,7 @@ footer .social a i {
   line-height: 30px;
   color: white;
 }
-/* line 60, ../../templates/sass/specific/_home.scss */
+/* line 62, ../../templates/sass/specific/_home.scss */
 .home #block .desc_wrapper .content .desc .subtitle {
   margin-top: 30px;
 }
@@ -275,39 +276,81 @@ footer .social a i {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: aqua;
+  background-color: #F7F7F7;
+  box-shadow: 0 0 20px -7px #0000007a;
 }
-/* line 22, ../../templates/sass/specific/_contact.scss */
+/* line 24, ../../templates/sass/specific/_contact.scss */
 .contact .contact_wrapper .form_wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-/* line 27, ../../templates/sass/specific/_contact.scss */
+/* line 30, ../../templates/sass/specific/_contact.scss */
 .contact .contact_wrapper .form_wrapper form {
   width: 70%;
 }
-/* line 29, ../../templates/sass/specific/_contact.scss */
+/* line 32, ../../templates/sass/specific/_contact.scss */
 .contact .contact_wrapper .form_wrapper form div {
   margin-top: 20px;
   width: 100%;
 }
-/* line 34, ../../templates/sass/specific/_contact.scss */
+/* line 37, ../../templates/sass/specific/_contact.scss */
 .contact .contact_wrapper .form_wrapper form input, .contact .contact_wrapper .form_wrapper form textarea {
   width: 100%;
   padding: 15px;
   background-color: transparent;
+  border: 1px solid black;
 }
-/* line 42, ../../templates/sass/specific/_contact.scss */
+/* line 46, ../../templates/sass/specific/_contact.scss */
 .contact .contact_wrapper .form_wrapper form label {
   margin-top: 10px;
 }
-/* line 46, ../../templates/sass/specific/_contact.scss */
+/* line 50, ../../templates/sass/specific/_contact.scss */
 .contact .contact_wrapper .form_wrapper form input[type=submit] {
   width: 25%;
   margin-top: 15px;
-  right: -25px;
+  right: -33px;
   float: right;
   position: relative;
+  background-color: black;
+  color: #F7F7F7;
+  font-weight: bold;
+}
+
+/* line 3, ../../templates/sass/specific/_CV.scss */
+.cv header {
+  top: 0;
+}
+/* line 7, ../../templates/sass/specific/_CV.scss */
+.cv #block {
+  margin: 150px 0;
+}
+/* line 10, ../../templates/sass/specific/_CV.scss */
+.cv #block .cv_wrapper {
+  width: 80%;
+  margin: 0 auto;
+  background-color: aqua;
+}
+/* line 16, ../../templates/sass/specific/_CV.scss */
+.cv #block .cv_wrapper .studies_wrapper {
+  margin: 0 auto;
+}
+/* line 19, ../../templates/sass/specific/_CV.scss */
+.cv #block .cv_wrapper .studies_wrapper .title_wrapper {
+  text-align: center;
+}
+/* line 23, ../../templates/sass/specific/_CV.scss */
+.cv #block .cv_wrapper .studies_wrapper .studies {
+  margin: 65px auto;
+  max-width: 700px;
+}
+/* line 27, ../../templates/sass/specific/_CV.scss */
+.cv #block .cv_wrapper .studies_wrapper .studies h2 {
+  font-weight: 500;
+}
+/* line 31, ../../templates/sass/specific/_CV.scss */
+.cv #block .cv_wrapper .studies_wrapper .studies h3 {
+  margin: 15px 0;
+  font-weight: 600;
 }
