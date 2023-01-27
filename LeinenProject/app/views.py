@@ -37,18 +37,18 @@ def contacto_handler(request):
 
 def cv_handler(request):
 
-    education=CV.objects.filter().exclude(
-        public=False,
-        education=False
-    )
+    education=CV.objects.filter(public=True,education=True)
+        
+   
 
-    works=CV.objects.filter().exclude(
-        public=False
-    )
+    works=CV.objects.filter(public=True,education=False)
+
+    skills=Software_Skills.objects.filter(public=True)
     
 
 
     return render(request,'cv.html',{
-        'articles':education,
-        'works':works
+        'studies':education,
+        'works':works,
+        'skills':skills
     })

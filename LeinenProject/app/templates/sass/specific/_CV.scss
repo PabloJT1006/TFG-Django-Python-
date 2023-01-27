@@ -8,32 +8,75 @@
         margin: 150px 0;
         
         .cv_wrapper{
-            width: 80%;
+            width: 70%;
             margin: 0 auto;
-            background-color: aqua;
+            padding: 35px;
+            background-color:#f7f7f7;
+            box-shadow: 0 0 20px -7px #0000007a;
             
             
-            .studies_wrapper{
+            
+            .studies_wrapper, .works_wrapper{
                 
                 margin: 0 auto;
                 .title_wrapper{
                     text-align: center;
                 }
 
-                .studies{
+                .studies, .works{
                     margin: 65px auto;
                     max-width: 700px;
 
                     h2{
+                        font-size: 22px;
                         font-weight: 500;
+                        line-height: 1.41;
                     }
 
                     h3{
                         margin: 15px 0;
+                        font-size: 18px;
+                        line-height: 1.75;
                         font-weight: 600;
+                    }
+
+                    p{
+                        font-size: 15px;
+                        line-height: 1.88;
                     }
                 }
             }
+
+
+            .langs_wrapper{
+                text-align: center;
+                
+                h3{
+                    font-size: 18px;
+                    line-height: 1.75;
+
+                }
+                
+                .languages{
+                    margin-top:35px ;
+                    
+                    ul{
+                        display: flex;
+                        justify-content: space-around;
+                        list-style: none;
+                        
+                        li{
+                            font-size: 18px;
+                            line-height:1.75 ;
+                        }
+
+                    }
+                    
+                }
+            }
+
+
+
         }
     }
 
