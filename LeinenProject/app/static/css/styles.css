@@ -303,12 +303,13 @@ footer .social a i {
   padding: 15px;
   background-color: transparent;
   border: 1px solid black;
+  resize: none;
 }
-/* line 46, ../../templates/sass/specific/_contact.scss */
+/* line 47, ../../templates/sass/specific/_contact.scss */
 .contact .contact_wrapper .form_wrapper form label {
   margin-top: 10px;
 }
-/* line 50, ../../templates/sass/specific/_contact.scss */
+/* line 51, ../../templates/sass/specific/_contact.scss */
 .contact .contact_wrapper .form_wrapper form input[type=submit] {
   width: 25%;
   margin-top: 15px;
@@ -388,6 +389,34 @@ footer .social a i {
 }
 /* line 68, ../../templates/sass/specific/_CV.scss */
 .cv #block .cv_wrapper .langs_wrapper .languages ul li {
+  font-size: 18px;
+  line-height: 1.75;
+}
+/* line 80, ../../templates/sass/specific/_CV.scss */
+.cv #block .cv_wrapper .skills_wrapper {
+  margin: 100px 0;
+}
+/* line 83, ../../templates/sass/specific/_CV.scss */
+.cv #block .cv_wrapper .skills_wrapper .title_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+/* line 88, ../../templates/sass/specific/_CV.scss */
+.cv #block .cv_wrapper .skills_wrapper .title_wrapper h3 {
+  font-size: 18px;
+}
+/* line 93, ../../templates/sass/specific/_CV.scss */
+.cv #block .cv_wrapper .skills_wrapper .skills_lists {
+  display: flex;
+  justify-content: space-evenly;
+}
+/* line 97, ../../templates/sass/specific/_CV.scss */
+.cv #block .cv_wrapper .skills_wrapper .skills_lists ul {
+  list-style: none;
+}
+/* line 100, ../../templates/sass/specific/_CV.scss */
+.cv #block .cv_wrapper .skills_wrapper .skills_lists ul li {
   font-size: 18px;
   line-height: 1.75;
 }

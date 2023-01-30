@@ -77,6 +77,37 @@
 
 
 
+            .skills_wrapper{
+                margin: 100px 0;
+                
+                .title_wrapper{
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 20px;
+                    
+                    h3{
+                        font-size: 18px;
+                    }
+                }
+
+              .skills_lists{
+                display: flex;
+                justify-content: space-evenly;
+
+                  ul{
+                      list-style: none;
+  
+                      li{
+                        font-size: 18px;
+                          line-height: 1.75;
+                      }
+                  }
+
+              }  
+            }
+
+
+
         }
     }
 

@@ -38,17 +38,32 @@ def contacto_handler(request):
 def cv_handler(request):
 
     education=CV.objects.filter(public=True,education=True)
-        
-   
-
     works=CV.objects.filter(public=True,education=False)
 
     skills=Software_Skills.objects.filter(public=True)
-    
+    def order_skills(skills):
+        left=[]
+        right=[]
 
+        x=len(skills)
+
+        for skill in skills:
+            if x%2 ==0:
+                left.append(skill)
+            else:
+                right.append(skill)
+            x-=1
+        
+        skills={'right':right,'left':left}
+
+        return skills
+
+    
 
     return render(request,'cv.html',{
         'studies':education,
         'works':works,
-        'skills':skills
+        'skills':order_skills(skills),
+        
+
     })

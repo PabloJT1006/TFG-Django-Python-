@@ -3,7 +3,7 @@ from django.core import validators
 
 class FormContacto(forms.Form):
     name = forms.CharField(
-        label = 'Name',
+        label = 'Name*',
         max_length=20,
         required=True,
         widget=forms.TextInput(
@@ -21,7 +21,7 @@ class FormContacto(forms.Form):
 
 
     email=forms.EmailField(
-        label='Email',
+        label='Email*',
         max_length=30,
         required=True,
 
@@ -37,15 +37,27 @@ class FormContacto(forms.Form):
     project=forms.CharField(
         label='Project',
         max_length=30,
-        required=True,
+        required=False,
 
-           widget=forms.Textarea(
+           widget=forms.TextInput(
             attrs={
                 'placeholder':'Write your subject',
-                'class':'email'
+                'class':'project'
             }
         ),
 
     )
 
-    message=forms.CharField()
+    message=forms.CharField(
+        label="Message",
+        max_length=100,
+        required=False,
+
+          widget=forms.Textarea(
+            attrs={
+                'placeholder':'Write your message',
+                'class':'message'
+            }
+            
+          ),
+    )
