@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 import app.views
+from django.conf import settings
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,3 +27,8 @@ urlpatterns = [
     path('contacto/',app.views.contacto_handler,name='contacto'),
     path('cv/',app.views.cv_handler,name='cv'),
 ]
+
+
+if settings.DEBUG:
+    from django.conf.urls.static import static
+    urlpatterns += static(settings.MEDIA_URL, document__root=settings.MEDIA_ROOT)
