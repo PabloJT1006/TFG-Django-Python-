@@ -7,6 +7,7 @@ header {
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  top: 0;
   z-index: 1;
   transition: all .4s;
   color: black;
@@ -14,38 +15,38 @@ header {
   border-bottom: 1px solid #e1e1e1;
   opacity: .9;
 }
-/* line 18, ../../templates/sass/generic/_header.scss */
+/* line 19, ../../templates/sass/generic/_header.scss */
 header .title_wrapper a {
   text-decoration: none;
   color: black;
 }
-/* line 26, ../../templates/sass/generic/_header.scss */
+/* line 27, ../../templates/sass/generic/_header.scss */
 header nav {
   height: fit-content;
   padding-right: 65px;
   font-size: 15px;
 }
-/* line 31, ../../templates/sass/generic/_header.scss */
+/* line 32, ../../templates/sass/generic/_header.scss */
 header nav ul {
   list-style: none;
   text-decoration: none;
 }
-/* line 35, ../../templates/sass/generic/_header.scss */
+/* line 36, ../../templates/sass/generic/_header.scss */
 header nav ul li {
   line-height: 40px;
   float: left;
   transition: all .4s;
 }
-/* line 40, ../../templates/sass/generic/_header.scss */
+/* line 41, ../../templates/sass/generic/_header.scss */
 header nav ul li:hover {
   border-bottom: 1px solid red;
 }
-/* line 44, ../../templates/sass/generic/_header.scss */
+/* line 45, ../../templates/sass/generic/_header.scss */
 header nav ul li:hover a {
   box-shadow: 10px black;
   font-size: 20px;
 }
-/* line 52, ../../templates/sass/generic/_header.scss */
+/* line 53, ../../templates/sass/generic/_header.scss */
 header nav ul li a {
   padding: 0px 35px;
   color: black;
@@ -53,12 +54,12 @@ header nav ul li a {
   font-size: 17px;
   transition: all .4s;
 }
-/* line 65, ../../templates/sass/generic/_header.scss */
+/* line 66, ../../templates/sass/generic/_header.scss */
 header .title_wrapper {
   padding: 0px 85px;
   /*logo title*/
 }
-/* line 70, ../../templates/sass/generic/_header.scss */
+/* line 71, ../../templates/sass/generic/_header.scss */
 header .title_wrapper h1 {
   display: block;
   letter-spacing: 2px;
@@ -148,8 +149,12 @@ footer .social a i {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-/* line 35, ../../templates/sass/specific/_home.scss */
+/* line 39, ../../templates/sass/specific/_home.scss */
 .home #block .desc_wrapper {
   height: 530px;
   display: flex;
@@ -157,19 +162,19 @@ footer .social a i {
   align-items: center;
   background-color: #37322E;
 }
-/* line 42, ../../templates/sass/specific/_home.scss */
+/* line 46, ../../templates/sass/specific/_home.scss */
 .home #block .desc_wrapper .content {
   height: 300px;
   width: 50%;
   text-align: center;
 }
-/* line 48, ../../templates/sass/specific/_home.scss */
+/* line 52, ../../templates/sass/specific/_home.scss */
 .home #block .desc_wrapper .content .icon {
   width: fit-content;
   height: fit-content;
   margin: 0 auto;
 }
-/* line 54, ../../templates/sass/specific/_home.scss */
+/* line 58, ../../templates/sass/specific/_home.scss */
 .home #block .desc_wrapper .content .desc {
   width: fit-content;
   height: fit-content;
@@ -178,9 +183,42 @@ footer .social a i {
   line-height: 30px;
   color: white;
 }
-/* line 63, ../../templates/sass/specific/_home.scss */
+/* line 67, ../../templates/sass/specific/_home.scss */
 .home #block .desc_wrapper .content .desc .subtitle {
   margin-top: 30px;
+}
+/* line 77, ../../templates/sass/specific/_home.scss */
+.home #block .carousel_wrapper {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 84, ../../templates/sass/specific/_home.scss */
+.home #block .carousel_wrapper .item {
+  background-color: #37322E;
+}
+/* line 91, ../../templates/sass/specific/_home.scss */
+.home #block .carousel_wrapper .owl-prev, .home #block .carousel_wrapper .owl-next {
+  transition: all .4s;
+  position: absolute;
+  top: 45%;
+  font-size: 60px;
+  background-color: #37322e94;
+  padding: 20px;
+}
+/* line 99, ../../templates/sass/specific/_home.scss */
+.home #block .carousel_wrapper .owl-prev:hover, .home #block .carousel_wrapper .owl-next:hover {
+  background-color: #37322e94;
+}
+/* line 103, ../../templates/sass/specific/_home.scss */
+.home #block .carousel_wrapper .owl-prev:hover i:before, .home #block .carousel_wrapper .owl-next:hover i:before {
+  color: white;
+}
+/* line 109, ../../templates/sass/specific/_home.scss */
+.home #block .carousel_wrapper .owl-prev i:before, .home #block .carousel_wrapper .owl-next i:before {
+  color: white;
 }
 
 /* line 2, ../../templates/sass/specific/_about.scss */
@@ -321,15 +359,11 @@ footer .social a i {
   font-weight: bold;
 }
 
-/* line 3, ../../templates/sass/specific/_CV.scss */
-.cv header {
-  top: 0;
-}
-/* line 7, ../../templates/sass/specific/_CV.scss */
+/* line 4, ../../templates/sass/specific/_CV.scss */
 .cv #block {
   margin: 150px 0;
 }
-/* line 10, ../../templates/sass/specific/_CV.scss */
+/* line 7, ../../templates/sass/specific/_CV.scss */
 .cv #block .cv_wrapper {
   width: 70%;
   margin: 0 auto;
@@ -337,86 +371,142 @@ footer .social a i {
   background-color: #f7f7f7;
   box-shadow: 0 0 20px -7px #0000007a;
 }
-/* line 19, ../../templates/sass/specific/_CV.scss */
+/* line 16, ../../templates/sass/specific/_CV.scss */
 .cv #block .cv_wrapper .studies_wrapper, .cv #block .cv_wrapper .works_wrapper {
   margin: 0 auto;
 }
-/* line 22, ../../templates/sass/specific/_CV.scss */
+/* line 19, ../../templates/sass/specific/_CV.scss */
 .cv #block .cv_wrapper .studies_wrapper .title_wrapper, .cv #block .cv_wrapper .works_wrapper .title_wrapper {
   text-align: center;
 }
-/* line 26, ../../templates/sass/specific/_CV.scss */
+/* line 23, ../../templates/sass/specific/_CV.scss */
 .cv #block .cv_wrapper .studies_wrapper .studies, .cv #block .cv_wrapper .studies_wrapper .works, .cv #block .cv_wrapper .works_wrapper .studies, .cv #block .cv_wrapper .works_wrapper .works {
   margin: 65px auto;
   max-width: 700px;
 }
-/* line 30, ../../templates/sass/specific/_CV.scss */
+/* line 27, ../../templates/sass/specific/_CV.scss */
 .cv #block .cv_wrapper .studies_wrapper .studies h2, .cv #block .cv_wrapper .studies_wrapper .works h2, .cv #block .cv_wrapper .works_wrapper .studies h2, .cv #block .cv_wrapper .works_wrapper .works h2 {
   font-size: 22px;
   font-weight: 500;
   line-height: 1.41;
 }
-/* line 36, ../../templates/sass/specific/_CV.scss */
+/* line 33, ../../templates/sass/specific/_CV.scss */
 .cv #block .cv_wrapper .studies_wrapper .studies h3, .cv #block .cv_wrapper .studies_wrapper .works h3, .cv #block .cv_wrapper .works_wrapper .studies h3, .cv #block .cv_wrapper .works_wrapper .works h3 {
   margin: 15px 0;
   font-size: 18px;
   line-height: 1.75;
   font-weight: 600;
 }
-/* line 43, ../../templates/sass/specific/_CV.scss */
+/* line 40, ../../templates/sass/specific/_CV.scss */
 .cv #block .cv_wrapper .studies_wrapper .studies p, .cv #block .cv_wrapper .studies_wrapper .works p, .cv #block .cv_wrapper .works_wrapper .studies p, .cv #block .cv_wrapper .works_wrapper .works p {
   font-size: 15px;
   line-height: 1.88;
 }
-/* line 51, ../../templates/sass/specific/_CV.scss */
+/* line 48, ../../templates/sass/specific/_CV.scss */
 .cv #block .cv_wrapper .langs_wrapper {
   text-align: center;
 }
-/* line 54, ../../templates/sass/specific/_CV.scss */
+/* line 51, ../../templates/sass/specific/_CV.scss */
 .cv #block .cv_wrapper .langs_wrapper h3 {
   font-size: 18px;
   line-height: 1.75;
 }
-/* line 60, ../../templates/sass/specific/_CV.scss */
+/* line 57, ../../templates/sass/specific/_CV.scss */
 .cv #block .cv_wrapper .langs_wrapper .languages {
   margin-top: 35px;
 }
-/* line 63, ../../templates/sass/specific/_CV.scss */
+/* line 60, ../../templates/sass/specific/_CV.scss */
 .cv #block .cv_wrapper .langs_wrapper .languages ul {
   display: flex;
   justify-content: space-around;
   list-style: none;
 }
-/* line 68, ../../templates/sass/specific/_CV.scss */
+/* line 65, ../../templates/sass/specific/_CV.scss */
 .cv #block .cv_wrapper .langs_wrapper .languages ul li {
   font-size: 18px;
   line-height: 1.75;
 }
-/* line 80, ../../templates/sass/specific/_CV.scss */
+/* line 77, ../../templates/sass/specific/_CV.scss */
 .cv #block .cv_wrapper .skills_wrapper {
   margin: 100px 0;
 }
-/* line 83, ../../templates/sass/specific/_CV.scss */
+/* line 80, ../../templates/sass/specific/_CV.scss */
 .cv #block .cv_wrapper .skills_wrapper .title_wrapper {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
-/* line 88, ../../templates/sass/specific/_CV.scss */
+/* line 85, ../../templates/sass/specific/_CV.scss */
 .cv #block .cv_wrapper .skills_wrapper .title_wrapper h3 {
   font-size: 18px;
 }
-/* line 93, ../../templates/sass/specific/_CV.scss */
+/* line 90, ../../templates/sass/specific/_CV.scss */
 .cv #block .cv_wrapper .skills_wrapper .skills_lists {
   display: flex;
   justify-content: space-evenly;
 }
-/* line 97, ../../templates/sass/specific/_CV.scss */
+/* line 94, ../../templates/sass/specific/_CV.scss */
 .cv #block .cv_wrapper .skills_wrapper .skills_lists ul {
   list-style: none;
 }
-/* line 100, ../../templates/sass/specific/_CV.scss */
+/* line 97, ../../templates/sass/specific/_CV.scss */
 .cv #block .cv_wrapper .skills_wrapper .skills_lists ul li {
   font-size: 18px;
   line-height: 1.75;
+}
+
+/* line 3, ../../templates/sass/specific/_portfolio.scss */
+.portfolio #block {
+  margin: 150px 0;
+}
+/* line 6, ../../templates/sass/specific/_portfolio.scss */
+.portfolio #block .portfolio_wrapper {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 20px -7px #0000007a;
+}
+/* line 17, ../../templates/sass/specific/_portfolio.scss */
+.portfolio #block .portfolio_wrapper .title_wrapper {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  padding: 20px;
+}
+/* line 23, ../../templates/sass/specific/_portfolio.scss */
+.portfolio #block .portfolio_wrapper .title_wrapper h1 {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+/* line 28, ../../templates/sass/specific/_portfolio.scss */
+.portfolio #block .portfolio_wrapper .title_wrapper p {
+  font-size: 20px;
+  line-height: 1.4;
+}
+/* line 37, ../../templates/sass/specific/_portfolio.scss */
+.portfolio #block .portfolio_wrapper .content_wrapper {
+  width: 95%;
+  height: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  grid-auto-rows: 400px 500px;
+  justify-items: center;
+  padding-bottom: 60px;
+}
+/* line 48, ../../templates/sass/specific/_portfolio.scss */
+.portfolio #block .portfolio_wrapper .content_wrapper .img_wrapper {
+  position: relative;
+}
+/* line 54, ../../templates/sass/specific/_portfolio.scss */
+.portfolio #block .portfolio_wrapper .content_wrapper .img_wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

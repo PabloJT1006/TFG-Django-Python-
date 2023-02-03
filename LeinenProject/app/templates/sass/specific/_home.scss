@@ -30,6 +30,10 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        color:aquamarine; 
+        display:flex; 
+        justify-content:center;
+        align-items:center
     }
 
     .desc_wrapper{
@@ -67,5 +71,57 @@
             }
         }
     }
-}
-}
+
+
+
+    .carousel_wrapper{
+        width: 100%;
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .item{
+            background-color: #37322E;
+        }
+        
+        
+       
+
+                .owl-prev , .owl-next{
+                    transition:  all .4s;
+                    position: absolute;
+                    top: 45%;
+                    font-size: 60px;
+                    background-color: #37322e94;
+                    padding: 20px;
+                    
+                    &:hover{
+                        background-color: #37322e94;
+                        
+                        
+                        i:before{
+                            color: white;
+                        }
+                    }
+                    
+                    i{
+                        &:before{
+                            color: white;
+                            
+                            
+                        }
+                    }
+                }
+            }    
+        
+        
+        }
+    
+    }
+
+
+    
+
+
+

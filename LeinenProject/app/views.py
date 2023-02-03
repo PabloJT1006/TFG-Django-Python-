@@ -34,13 +34,13 @@ def contacto_handler(request):
         'form':form
     })
 
-
+#
 def cv_handler(request):
 
     education=CV.objects.filter(public=True,education=True)
     works=CV.objects.filter(public=True,education=False)
 
-    skills=Software_Skills.objects.filter(public=True)
+    skills=Software_Skill.objects.filter(public=True)
     def order_skills(skills):
         left=[]
         right=[]
@@ -67,3 +67,8 @@ def cv_handler(request):
         
 
     })
+
+
+def portfolio_handler(request):
+
+    return render(request,'portfolio.html')

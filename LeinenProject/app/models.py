@@ -17,9 +17,20 @@ class CV(models.Model):
         verbose_name_plural="Experiencia y estudio"
 
 
-class Software_Skills(models.Model):
+class Software_Skill(models.Model):
     title=models.CharField(max_length=150)
     public=models.BooleanField(verbose_name="Activo")
+
+
+class Album(models.Model):
+    title=models.CharField(max_length=150,verbose_name="Titulo")
+    type=models.CharField(max_length=150,verbose_name="Tipo")
+    date=models.DateField(verbose_name="Fecha")
+    description=models.CharField(max_length=1500,verbose_name="Descrpción")
+    galery=models.ImageField(default='null',verbose_name='Galery')
+    front=models.ImageField(default='null',verbose_name='Portada')
+    
+
 
 
         

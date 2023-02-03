@@ -26,6 +26,8 @@ urlpatterns = [
     path('about/',app.views.about_handler,name='about'),
     path('contacto/',app.views.contacto_handler,name='contacto'),
     path('cv/',app.views.cv_handler,name='cv'),
+    path('portfolio/',app.views.portfolio_handler,name='portfolio'),
+
 ]
 
 
