@@ -36,7 +36,7 @@ const prevIcon= '<i class="fa-solid fa-chevron-left"></i>';
 
 $('.owl-carousel').owlCarousel({
     loop:true,
-    margin:10,
+    margin:0,
     nav:true,
     items:3,
     navText:[

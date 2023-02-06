@@ -195,30 +195,48 @@ footer .social a i {
   justify-content: center;
   align-items: center;
 }
-/* line 84, ../../templates/sass/specific/_home.scss */
-.home #block .carousel_wrapper .item {
-  background-color: #37322E;
+/* line 85, ../../templates/sass/specific/_home.scss */
+.home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active {
+  z-index: 3;
 }
-/* line 91, ../../templates/sass/specific/_home.scss */
-.home #block .carousel_wrapper .owl-prev, .home #block .carousel_wrapper .owl-next {
+/* line 88, ../../templates/sass/specific/_home.scss */
+.home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active img {
+  opacity: 1;
+}
+/* line 92, ../../templates/sass/specific/_home.scss */
+.home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active ~ .owl-item.active {
+  z-index: 1;
+}
+/* line 96, ../../templates/sass/specific/_home.scss */
+.home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active ~ .owl-item.active .item img {
+  opacity: 0.8;
+}
+/* line 103, ../../templates/sass/specific/_home.scss */
+.home #block .carousel_wrapper .owl-carousel .item {
+  background-color: #37322E;
+  height: 400px;
+  width: 500px;
+}
+/* line 107, ../../templates/sass/specific/_home.scss */
+.home #block .carousel_wrapper .owl-carousel .item img {
+  opacity: 0.8;
+}
+/* line 115, ../../templates/sass/specific/_home.scss */
+.home #block .carousel_wrapper .owl-carousel .owl-prev, .home #block .carousel_wrapper .owl-carousel .owl-next {
   transition: all .4s;
   position: absolute;
   top: 45%;
   font-size: 60px;
-  background-color: #37322e94;
+  background-color: #37322e;
   padding: 20px;
 }
-/* line 99, ../../templates/sass/specific/_home.scss */
-.home #block .carousel_wrapper .owl-prev:hover, .home #block .carousel_wrapper .owl-next:hover {
-  background-color: #37322e94;
-}
-/* line 103, ../../templates/sass/specific/_home.scss */
-.home #block .carousel_wrapper .owl-prev:hover i:before, .home #block .carousel_wrapper .owl-next:hover i:before {
+/* line 123, ../../templates/sass/specific/_home.scss */
+.home #block .carousel_wrapper .owl-carousel .owl-prev i:before, .home #block .carousel_wrapper .owl-carousel .owl-next i:before {
   color: white;
 }
-/* line 109, ../../templates/sass/specific/_home.scss */
-.home #block .carousel_wrapper .owl-prev i:before, .home #block .carousel_wrapper .owl-next i:before {
-  color: white;
+/* line 127, ../../templates/sass/specific/_home.scss */
+.home #block .carousel_wrapper .owl-carousel .owl-prev:hover, .home #block .carousel_wrapper .owl-carousel .owl-next:hover {
+  background-color: #37322e6e;
 }
 
 /* line 2, ../../templates/sass/specific/_about.scss */
