@@ -1,4 +1,5 @@
 .home{
+    overflow-x: hidden;
     header{
         color:#d1d4d6;
         background-color: transparent !important;
@@ -80,10 +81,26 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        
 
         .owl-carousel{
+
+            .owl-stage-outer{
+                left: 30px;
+            }
+
+
+            .owl-item{
+                width: 500px;
+                height: 500px;
+                
+               
+            }
+
             .owl-item.active + .owl-item.active {
                 z-index: 3;
+                margin-left:-30px ;
+                
                 
                 img{
                     opacity: 1;
@@ -91,19 +108,29 @@
 
                 & ~ .owl-item.active{
                     z-index: 1;
+                     
+                    margin-right: 30px !important;
 
                     .item{
+                        background-color: red;
+                        
                         img{
                             opacity: 0.8;
                         }
+    
                     }
                 }
+                .item{
+                    background-color: rgba(128, 0, 128, 0.267);
+
+                }
+
             }
 
             .item{
-                background-color: #37322E;
-                height: 400px;
-                width: 500px;
+                background-color: red;
+                height: auto;
+                width: auto;
                 img{
                     opacity: 0.8;
                 }

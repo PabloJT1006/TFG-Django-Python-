@@ -39,6 +39,7 @@ $('.owl-carousel').owlCarousel({
     margin:0,
     nav:true,
     items:3,
+
     navText:[
         prevIcon,
         nextIcon
