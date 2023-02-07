@@ -104,6 +104,21 @@
 
             .owl-item{
                 transition: all .6s;
+                .see_more{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    top:0;
+                    width: 140%;
+                    height: 100%;
+                    background-color: #37322e9a;
+                    z-index: 4;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all .5s ease-out;
+                    border-radius: 8px;
+                }
             }
             
             
@@ -112,17 +127,15 @@
                 z-index: 3;
                 right: 128px;
                 height: 560px;
-                
-                .item{
-                    img{
-                        opacity: 1;
-                        transition: all 500ms ease-out;
+
+                &:hover{
+                    .see_more{
+                     opacity: 1;
+                     visibility: visible;
                     }
 
-                    // .see_more{
-                    //     position: absolute;
-                    //     top
-                    // }
+                    
+                    
                 }
                 
                 & ~ .owl-item.active{
