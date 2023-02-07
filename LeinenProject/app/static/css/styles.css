@@ -193,58 +193,63 @@ footer .social a i {
 }
 /* line 78, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper {
-  width: 100%;
+  width: auto;
   height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/* line 88, ../../templates/sass/specific/_home.scss */
+/* line 86, ../../templates/sass/specific/_home.scss */
+.home #block .carousel_wrapper .owl-carousel {
+  padding: 30px 50px;
+  width: 90%;
+}
+/* line 91, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-stage-outer {
-  left: 30px;
+  height: 600px;
+  display: grid;
+  align-items: center;
+  left: -15px;
 }
-/* line 93, ../../templates/sass/specific/_home.scss */
-.home #block .carousel_wrapper .owl-carousel .owl-item {
-  width: 500px;
-  height: 500px;
+/* line 98, ../../templates/sass/specific/_home.scss */
+.home #block .carousel_wrapper .owl-carousel .owl-stage {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
-/* line 100, ../../templates/sass/specific/_home.scss */
+/* line 107, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active {
   z-index: 3;
-  margin-left: -30px;
+  right: 95px;
+  height: 560px;
 }
-/* line 105, ../../templates/sass/specific/_home.scss */
+/* line 113, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active img {
   opacity: 1;
 }
-/* line 109, ../../templates/sass/specific/_home.scss */
+/* line 117, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active ~ .owl-item.active {
   z-index: 1;
-  margin-right: 30px !important;
-}
-/* line 114, ../../templates/sass/specific/_home.scss */
-.home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active ~ .owl-item.active .item {
-  background-color: red;
-}
-/* line 117, ../../templates/sass/specific/_home.scss */
-.home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active ~ .owl-item.active .item img {
-  opacity: 0.8;
-}
-/* line 123, ../../templates/sass/specific/_home.scss */
-.home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active .item {
-  background-color: rgba(128, 0, 128, 0.267);
-}
-/* line 130, ../../templates/sass/specific/_home.scss */
-.home #block .carousel_wrapper .owl-carousel .item {
-  background-color: red;
   height: auto;
-  width: auto;
+  box-shadow: none;
 }
-/* line 134, ../../templates/sass/specific/_home.scss */
+/* line 125, ../../templates/sass/specific/_home.scss */
+.home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active .item img {
+  width: 100%;
+  height: 100%;
+}
+/* line 133, ../../templates/sass/specific/_home.scss */
+.home #block .carousel_wrapper .owl-carousel .item {
+  width: 140%;
+  height: 100%;
+  box-shadow: 0 0 20px -7px #0000007a;
+}
+/* line 138, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .item img {
-  opacity: 0.8;
+  object-fit: cover;
 }
-/* line 142, ../../templates/sass/specific/_home.scss */
+/* line 148, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-prev, .home #block .carousel_wrapper .owl-carousel .owl-next {
   transition: all .4s;
   position: absolute;
@@ -253,11 +258,11 @@ footer .social a i {
   background-color: #37322e;
   padding: 20px;
 }
-/* line 150, ../../templates/sass/specific/_home.scss */
+/* line 156, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-prev i:before, .home #block .carousel_wrapper .owl-carousel .owl-next i:before {
   color: white;
 }
-/* line 154, ../../templates/sass/specific/_home.scss */
+/* line 160, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-prev:hover, .home #block .carousel_wrapper .owl-carousel .owl-next:hover {
   background-color: #37322e6e;
 }
