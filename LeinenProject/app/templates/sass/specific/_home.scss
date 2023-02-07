@@ -92,7 +92,7 @@
                 height: 600px;
                 display: grid;
                 align-items: center;
-                left: -15px;
+                left: 8px;
             }
 
             .owl-stage{
@@ -102,22 +102,33 @@
                 justify-content: center;
             }
 
-
-
+            .owl-item{
+                transition: all .6s;
+            }
+            
+            
+            
             .owl-item.active + .owl-item.active {
                 z-index: 3;
-                right: 95px;
+                right: 128px;
                 height: 560px;
                 
-                
-                img{
-                    opacity: 1;
+                .item{
+                    img{
+                        opacity: 1;
+                        transition: all 500ms ease-out;
+                    }
+
+                    // .see_more{
+                    //     position: absolute;
+                    //     top
+                    // }
                 }
                 
                 & ~ .owl-item.active{
                     z-index: 1;
                     height: auto;
-                    box-shadow: none;
+                    left: -230px;
                 }
                 
                 .item{                    
@@ -127,9 +138,9 @@
                         height: 100%;
                     }
                 }
-
+                
             }
-
+            
             .item{
                 
                 width: 140%;
@@ -137,23 +148,33 @@
                 box-shadow: 0 0 20px -7px #0000007a;
                 img{
                     
+                    border-radius: 8px;
                     object-fit: cover;
+                    
                     
                 }
             }
             
             
-           
-    
-                    .owl-prev , .owl-next{
-                        transition:  all .4s;
-                        position: absolute;
-                        top: 45%;
-                        font-size: 60px;
-                        background-color: #37322e;
-                        padding: 20px;
-                        
-                        i:before{
+            
+            
+            button[type="button"]{
+                transition:  all .4s;
+                position: absolute;
+                top: 45%;
+                font-size: 60px;
+                background-color: #37322e;
+                padding: 20px;
+                
+                &.owl-prev{
+                    left: 29px;
+                }
+                &.owl-next{
+                    right: 10px;
+                }
+
+                
+                i:before{
                             color: white;    
                         }
                         

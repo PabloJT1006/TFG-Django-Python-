@@ -39,6 +39,8 @@ $('.owl-carousel').owlCarousel({
     margin:0,
     nav:true,
     items:3,
+    smartSpeed:500,
+    fluidSpeed:true,
 
     navText:[
         prevIcon,
