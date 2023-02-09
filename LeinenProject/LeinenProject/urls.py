@@ -27,6 +27,7 @@ urlpatterns = [
     path('contacto/',app.views.contacto_handler,name='contacto'),
     path('cv/',app.views.cv_handler,name='cv'),
     path('portfolio/',app.views.portfolio_handler,name='portfolio'),
+    path('gallery/<str:slug>',app.views.album_handler,name='gallery')
 
 ]
 

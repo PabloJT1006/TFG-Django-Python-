@@ -13,27 +13,25 @@
 
             <div class="content_wrapper">
                 
-                <div class="img_wrapper">
-                    <img src="{% static 'images/hamood.png' %}" alt="">
+
+                {% for album in albums %}
+
+                     <div class="img_wrapper">
+                    <a href="{% url 'gallery' album.slug %}">
+                        {{ album.2.url }}
+                        {% if album.front.url|length >= 1 and album.front.url != 'null' %}
+                            <img src="{{ album.front.url }}" alt="album cover">
+                        {% endif %}
+
+                    </a>
                 </div>
-                <div class="img_wrapper">
-                    <img src="{% static 'images/hamood.png' %}" alt="">
-                </div>
-                <div class="img_wrapper">
-                    <img src="{% static 'images/hamood.png' %}" alt="">
-                </div>
-                <div class="img_wrapper">
-                    <img src="{% static 'images/hamood.png' %}" alt="">
-                </div>
-                <div class="img_wrapper">
-                    <img src="{% static 'images/hamood.png' %}" alt="">
-                </div>
-                <div class="img_wrapper">
-                    <img src="{% static 'images/hamood.png' %}" alt="">
-                </div>
-                <div class="img_wrapper">
-                    <img src="{% static 'images/hamood.png' %}" alt="">
-                </div>
+
+
+                {% endfor %}
+
+
+
+                
                
             </div>
 

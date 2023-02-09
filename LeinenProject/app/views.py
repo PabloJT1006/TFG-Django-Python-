@@ -71,4 +71,19 @@ def cv_handler(request):
 
 def portfolio_handler(request):
 
-    return render(request,'portfolio.html')
+    albums=Album.objects.all()
+    print(albums)
+
+    return render(request,'portfolio.html', {
+        'albums':albums
+    })
+
+
+def album_handler(request,slug):
+    album=Album.objects.get(slug=slug)
+
+    print(Album.objects.)
+    
+    return render(request,"album_gallery.html",{
+        'album':album 
+    })

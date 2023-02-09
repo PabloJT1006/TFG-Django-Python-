@@ -218,10 +218,6 @@ footer .social a i {
   align-items: center;
   justify-content: center;
 }
-/* line 105, ../../templates/sass/specific/_home.scss */
-.home #block .carousel_wrapper .owl-carousel .owl-item {
-  transition: all .6s;
-}
 /* line 107, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-item .see_more {
   display: flex;
@@ -255,12 +251,12 @@ footer .social a i {
   height: auto;
   left: -230px;
 }
-/* line 149, ../../templates/sass/specific/_home.scss */
+/* line 150, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active .item img {
   width: 100%;
   height: 100%;
 }
-/* line 157, ../../templates/sass/specific/_home.scss */
+/* line 158, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .item {
   width: 140%;
   height: 100%;
@@ -579,10 +575,53 @@ footer .social a i {
 /* line 48, ../../templates/sass/specific/_portfolio.scss */
 .portfolio #block .portfolio_wrapper .content_wrapper .img_wrapper {
   position: relative;
+  border-radius: 5px;
 }
-/* line 54, ../../templates/sass/specific/_portfolio.scss */
+/* line 51, ../../templates/sass/specific/_portfolio.scss */
+.portfolio #block .portfolio_wrapper .content_wrapper .img_wrapper:hover {
+  box-shadow: 0 0 20px -7px #0000007a;
+}
+/* line 55, ../../templates/sass/specific/_portfolio.scss */
+.portfolio #block .portfolio_wrapper .content_wrapper .img_wrapper:hover img {
+  opacity: .8;
+}
+/* line 60, ../../templates/sass/specific/_portfolio.scss */
 .portfolio #block .portfolio_wrapper .content_wrapper .img_wrapper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 5px;
+  transition: all .4s;
+}
+
+/* line 2, ../../templates/sass/specific/_gallery.scss */
+.gallery #block {
+  margin: 150px 0;
+}
+/* line 5, ../../templates/sass/specific/_gallery.scss */
+.gallery #block .content_wrapper {
+  width: 95%;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 20px -7px #0000007a;
+}
+/* line 11, ../../templates/sass/specific/_gallery.scss */
+.gallery #block .content_wrapper .title_wrapper {
+  float: left;
+  position: relative;
+  background-color: red;
+  width: 25%;
+  height: 100%;
+}
+/* line 18, ../../templates/sass/specific/_gallery.scss */
+.gallery #block .content_wrapper .title_wrapper .title {
+  background-color: green;
+}
+/* line 22, ../../templates/sass/specific/_gallery.scss */
+.gallery #block .content_wrapper .title_wrapper .subtitle_wrapper {
+  background-color: blue;
+}
+/* line 51, ../../templates/sass/specific/_gallery.scss */
+.gallery #block .content_wrapper .gallery_wrapper {
+  background: purple;
 }

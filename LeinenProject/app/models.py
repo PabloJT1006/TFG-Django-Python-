@@ -28,6 +28,7 @@ class Album(models.Model):
     date=models.DateField(verbose_name="Fecha")
     description=models.CharField(max_length=1500,verbose_name="Descrpción")
     front=models.ImageField(default='null',verbose_name='Portada',upload_to='media')
+    slug = models.CharField(unique=True,max_length=50,verbose_name="Url",default='null')
 
 
 class AlbumGalery(models.Model):

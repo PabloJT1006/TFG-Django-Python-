@@ -1,0 +1,52 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    
+<body class="gallery ">
+    <div class="content_wrapper">
+        
+        <div class="title_wrapper">
+            <h1 class="title">
+                {{ album.title }}
+            </h1>
+
+            <div class="subtitle_wrapper">
+                <h3> Tipo de proyecto </h3>
+                
+                <p class="type">
+                    {{ album.type }}
+                </p>
+            </div>
+
+            <div class="date_wrapper">
+                <h3>Fecha</h3>
+
+                <p class="date">
+                    {{ album.date }}
+                </p>
+
+            </div>
+
+            <div class="description_wrapper">
+                <p>{{ album.description }}</p>
+            </div>
+
+        </div>
+
+        <img src="{{ album.galery.first.image.url }}" alt=""> 
+
+        <p>{{ album.galery.first.image }}</p>
+
+        <div class="gallery_wrapper">
+            {% for picture in album.galery.image  %}
+                
+                    <img src="{{ picture.url }}" alt="{{ album.title }}">
+
+            {% endfor %}
+        </div>
+    
+    
+    </div>
+</body>
+
+{% endblock content %}

@@ -1,0 +1,57 @@
+.gallery{
+    #block{
+        margin: 150px 0;
+
+        .content_wrapper{
+            width: 95%;
+            margin: 0 auto;
+            background-color: #f7f7f7;
+            box-shadow: 0 0 20px -7px #0000007a;
+
+            .title_wrapper{
+                float:left;
+                position: relative;
+                background-color: red;
+                width: 25%;
+                height: 100%;
+
+                .title{
+                    background-color: green;
+                }
+
+                .subtitle_wrapper{
+                    background-color: blue;
+
+                    h3{
+
+                    }
+                    .type{
+
+                    }
+                }
+
+                .date_wrapper{
+                    
+                    h3{
+
+                    }
+                    .date{
+
+                    }
+                }
+
+                .description_wrapper{
+
+                    p{
+
+                    }
+                }
+            }
+
+            .gallery_wrapper{
+                background: purple;
+            }
+
+        }
+    }
+}
