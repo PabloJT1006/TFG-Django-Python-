@@ -28,4 +28,5 @@ class AlbumGaleryAdmin(admin.ModelAdmin):
 
 admin.site.register(CV)
 admin.site.register(Software_Skill)
+admin.site.register(Contact)
 # admin.site.register(Album,AlbumAdmin)

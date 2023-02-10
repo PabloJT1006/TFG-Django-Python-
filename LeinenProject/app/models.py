@@ -40,6 +40,11 @@ class AlbumGalery(models.Model):
 
     
 
+class Contact(models.Model):
+    name=models.CharField(max_length=150,verbose_name="Nombre cliente")
+    mail=models.CharField(max_length=150,verbose_name="Mail")
+    project=models.CharField(max_length=150,verbose_name="Proyecto")
+    message=models.TextField(verbose_name="Mensaje")
 
 
         

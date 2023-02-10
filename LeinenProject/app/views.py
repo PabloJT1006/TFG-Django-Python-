@@ -7,7 +7,11 @@ from app.models import *
 # Create your views here.
 
 def home_handler(request):
-    return render(request,'home.html')
+    albums=Album.objects.all()
+
+    return render(request,'home.html',{
+        'albums':albums
+    })
 
 def about_handler(request):
     return render(request,'about.html')
@@ -21,6 +25,7 @@ def contacto_handler(request):
         if form.is_valid():
             #limpiar los datos y sacar lo introducido
             data_form=form.cleaned_data
+            
 
             messages.success(request,f"Mensaje mandado con exito")
 
