@@ -17,8 +17,8 @@
                 {% for album in albums %}
 
                      <div class="img_wrapper">
-                    <a href="{% url 'gallery' album.slug %}">
-                        {{ album.2.url }}
+                    <a href="{% url 'gallery' album.id %}">
+                        
                         {% if album.front.url|length >= 1 and album.front.url != 'null' %}
                             <img src="{{ album.front.url }}" alt="album cover">
                         {% endif %}

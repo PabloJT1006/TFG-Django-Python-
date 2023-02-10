@@ -121,8 +121,12 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 #media files
+DATA_DIR = os.path.dirname(os.path.dirname(__file__))
+STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+MEDIA_ROOT = os.path.join(DATA_DIR, 'media')
+STATIC_ROOT = os.path.join(DATA_DIR, 'static_collected')
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
 
 
 # Default primary key field type

@@ -79,11 +79,14 @@ def portfolio_handler(request):
     })
 
 
-def album_handler(request,slug):
-    album=Album.objects.get(slug=slug)
-
-    print(Album.objects.)
+def album_handler(request,id):
     
+    album=Album.objects.get(id=id)
+    #Para sacar la lista de imagenes, hacer que saque las que tengan el mismo title_id
+    #despues en el tamplate con hacer un for y mostrarlaas con picture.image.url
+    gallery=AlbumGalery.objects.filter(title_id=id)
+
     return render(request,"album_gallery.html",{
-        'album':album 
+        'album':album, 
+        'gallery':gallery
     })

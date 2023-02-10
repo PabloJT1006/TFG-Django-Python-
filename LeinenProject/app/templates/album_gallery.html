@@ -33,14 +33,12 @@
 
         </div>
 
-        <img src="{{ album.galery.first.image.url }}" alt=""> 
-
-        <p>{{ album.galery.first.image }}</p>
+        
 
         <div class="gallery_wrapper">
-            {% for picture in album.galery.image  %}
+            {% for picture in gallery  %}
                 
-                    <img src="{{ picture.url }}" alt="{{ album.title }}">
+                    <img src="{{ picture.image.url }}" alt="{{ album.title }}">
 
             {% endfor %}
         </div>
