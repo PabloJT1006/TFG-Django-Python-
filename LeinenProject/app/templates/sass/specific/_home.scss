@@ -2,8 +2,9 @@
     overflow-x: hidden;
     header{
         color:#d1d4d6;
+        
         background-color: transparent !important;
-        backdrop-filter:blur(10px);
+        
         border: none;
 
         
@@ -92,7 +93,7 @@
                 height: 600px;
                 display: grid;
                 align-items: center;
-                left: 8px;
+                
             }
 
             .owl-stage{
@@ -110,7 +111,7 @@
                     align-items: center;
                     position: absolute;
                     top:0;
-                    width: 140%;
+                    width: 100%;
                     height: 100%;
                     background-color: #37322e9a;
                     z-index: 4;
@@ -124,24 +125,37 @@
             
             
             .owl-item.active + .owl-item.active {
+               
                 z-index: 3;
-                right: 128px;
-                height: 560px;
 
-                &:hover{
-                    .see_more{
-                     opacity: 1;
-                     visibility: visible;
-                    }
+                .item{
+                    width: 140%;
+                    left: -22%;
+                    &:hover{
+                        .see_more{
+                         opacity: 1;
+                         visibility: visible;
+                        }
+                    
+                }
 
-                    
-                    
                 }
                 
                 & ~ .owl-item.active{
+                    
                     z-index: 1;
-                    height: auto;
-                    left: -230px;
+                 
+
+                    .item{
+                        left: auto;
+                        width: auto;
+
+                        .see_more{
+                            opacity: 0;
+                            visibility: hidden;
+                        }
+                    }
+                    
                 }
                 
                 .item{                    
@@ -156,8 +170,8 @@
             }
             
             .item{
-                width: 140%;
                 height: 100%;
+                position: relative;
                 box-shadow: 0 0 20px -7px #0000007a;
                 img{
                     

@@ -1,57 +1,165 @@
 .gallery{
+    overflow-x: hidden;
     #block{
         margin: 150px 0;
 
         .content_wrapper{
             width: 95%;
+            
             margin: 0 auto;
             background-color: #f7f7f7;
             box-shadow: 0 0 20px -7px #0000007a;
 
-            .title_wrapper{
-                float:left;
-                position: relative;
-                background-color: red;
-                width: 25%;
-                height: 100%;
+            .description_wrapper{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
 
-                .title{
-                    background-color: green;
-                }
-
-                .subtitle_wrapper{
-                    background-color: blue;
-
-                    h3{
-
-                    }
-                    .type{
-
-                    }
-                }
-
-                .date_wrapper{
+                .title_wrapper{
+                
+                    position: relative;
                     
-                    h3{
-
+                    width: 75%;
+                    height: 100%;
+                    margin-left: 5px;
+                    margin-top: 5px;
+                }
+    
+                    .title{
+                        padding: 15px;
+                        font-size: 50px;
                     }
-                    .date{
-
+    
+                    .subtitle_wrapper{
+                        padding: 15px;
+    
+                        h3{
+                            font-size: 25px;
+                            padding-bottom: 5px;
+    
+                        }
+                        .type{
+                            font-size: 18px;
+    
+                        }
+                    }
+    
+                    .date_wrapper{
+                        padding: 15px;
+                        h3{
+                            font-size: 25px;
+                            padding-bottom: 5px;
+                        }
+                        .date{
+                            font-size: 18px;
+    
+                        }
                     }
                 }
 
-                .description_wrapper{
 
+                .description_text{
+                    height: 90%;
+                    position: relative;
+                    margin-left:20px ;
+                    width: 100%;
+                    top: -45px;
                     p{
-
+                        font-size: 20px;
+                        line-height: 1.4;
                     }
                 }
+
+
             }
+            
+            
+            
+
+                
 
             .gallery_wrapper{
-                background: purple;
+                
+                width: fit-content;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                margin: 0 auto ;
+                
+                .images_wrapper{
+                    margin: 0 auto ;
+                    display: grid;
+                    position: relative;
+                    grid-template-columns: repeat(3,minmax(min-content,max-content));
+                    width: 100%;
+                    padding: 15px;
+                    
+                    .img_wrapper{
+                        display: block;
+                        width: 98%;
+                        padding: 3px;
+                        border-radius: 5px;
+                        transition: all .6s;
+                        position: relative;
+                    
+                        &:hover{
+                            width: 100%;
+                            z-index: 3;
+                            margin: 2%;
+                         
+                        }
+
+
+                        .modal.active{
+                            position:fixed;
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            top: 0;
+                            left: 0;
+                            z-index: 9998;
+                            
+
+                            img{
+                                width: auto;
+                                height: auto;
+                                z-index: 9999;
+                                
+                            }
+
+                            &:after{
+                                content: '';
+                                position:fixed;
+                                width: 100vw;
+                                height: 100vh;
+                                top: 0;
+                                left: 0;
+                                background-color: rgba(0, 0, 0, 0.308);
+                                z-index: 9998;                                
+                                
+                        }
+                        
+                        
+                    }
+
+                        img{
+                            max-width: 100%;
+                            max-height: 100%;
+                            border-radius: 5px;
+                            
+        
+                        }
+    
+                    }
+                }
+
+
+
             }
 
         }
     }
-}

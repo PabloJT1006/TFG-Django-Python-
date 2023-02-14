@@ -39,7 +39,7 @@ $('.owl-carousel').owlCarousel({
     margin:0,
     nav:true,
     items:3,
-    smartSpeed:500,
+    margin:5,
     fluidSpeed:true,
 
     navText:[
@@ -55,6 +55,29 @@ $('.owl-carousel').owlCarousel({
         },
         1000:{
             items:3
+        }
+    }
+})
+
+// video carousel
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
         }
     }
 })

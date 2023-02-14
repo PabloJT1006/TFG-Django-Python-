@@ -128,23 +128,22 @@ footer .social a i {
 .home header {
   color: #d1d4d6;
   background-color: transparent !important;
-  backdrop-filter: blur(10px);
   border: none;
 }
-/* line 11, ../../templates/sass/specific/_home.scss */
+/* line 12, ../../templates/sass/specific/_home.scss */
 .home header.solid {
   background-color: #d1d4d6 !important;
   color: black;
 }
-/* line 15, ../../templates/sass/specific/_home.scss */
+/* line 16, ../../templates/sass/specific/_home.scss */
 .home header.solid a {
   color: black;
 }
-/* line 20, ../../templates/sass/specific/_home.scss */
+/* line 21, ../../templates/sass/specific/_home.scss */
 .home header a {
   color: #d1d4d6;
 }
-/* line 26, ../../templates/sass/specific/_home.scss */
+/* line 27, ../../templates/sass/specific/_home.scss */
 .home #block .banner_home {
   width: 100%;
   height: 900px;
@@ -158,7 +157,7 @@ footer .social a i {
   justify-content: center;
   align-items: center;
 }
-/* line 40, ../../templates/sass/specific/_home.scss */
+/* line 41, ../../templates/sass/specific/_home.scss */
 .home #block .desc_wrapper {
   height: 530px;
   display: flex;
@@ -166,19 +165,19 @@ footer .social a i {
   align-items: center;
   background-color: #37322E;
 }
-/* line 47, ../../templates/sass/specific/_home.scss */
+/* line 48, ../../templates/sass/specific/_home.scss */
 .home #block .desc_wrapper .content {
   height: 300px;
   width: 50%;
   text-align: center;
 }
-/* line 53, ../../templates/sass/specific/_home.scss */
+/* line 54, ../../templates/sass/specific/_home.scss */
 .home #block .desc_wrapper .content .icon {
   width: fit-content;
   height: fit-content;
   margin: 0 auto;
 }
-/* line 59, ../../templates/sass/specific/_home.scss */
+/* line 60, ../../templates/sass/specific/_home.scss */
 .home #block .desc_wrapper .content .desc {
   width: fit-content;
   height: fit-content;
@@ -187,11 +186,11 @@ footer .social a i {
   line-height: 30px;
   color: white;
 }
-/* line 68, ../../templates/sass/specific/_home.scss */
+/* line 69, ../../templates/sass/specific/_home.scss */
 .home #block .desc_wrapper .content .desc .subtitle {
   margin-top: 30px;
 }
-/* line 78, ../../templates/sass/specific/_home.scss */
+/* line 79, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper {
   width: auto;
   height: 700px;
@@ -199,33 +198,32 @@ footer .social a i {
   justify-content: center;
   align-items: center;
 }
-/* line 86, ../../templates/sass/specific/_home.scss */
+/* line 87, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel {
   padding: 30px 50px;
   width: 90%;
 }
-/* line 91, ../../templates/sass/specific/_home.scss */
+/* line 92, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-stage-outer {
   height: 600px;
   display: grid;
   align-items: center;
-  left: 8px;
 }
-/* line 98, ../../templates/sass/specific/_home.scss */
+/* line 99, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-stage {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-/* line 107, ../../templates/sass/specific/_home.scss */
+/* line 108, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-item .see_more {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
   top: 0;
-  width: 140%;
+  width: 100%;
   height: 100%;
   background-color: #37322e9a;
   z-index: 4;
@@ -234,40 +232,51 @@ footer .social a i {
   transition: all .5s ease-out;
   border-radius: 8px;
 }
-/* line 126, ../../templates/sass/specific/_home.scss */
+/* line 127, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active {
   z-index: 3;
-  right: 128px;
-  height: 560px;
 }
-/* line 132, ../../templates/sass/specific/_home.scss */
-.home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active:hover .see_more {
+/* line 131, ../../templates/sass/specific/_home.scss */
+.home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active .item {
+  width: 140%;
+  left: -22%;
+}
+/* line 135, ../../templates/sass/specific/_home.scss */
+.home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active .item:hover .see_more {
   opacity: 1;
   visibility: visible;
 }
-/* line 141, ../../templates/sass/specific/_home.scss */
+/* line 144, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active ~ .owl-item.active {
   z-index: 1;
-  height: auto;
-  left: -230px;
 }
-/* line 150, ../../templates/sass/specific/_home.scss */
+/* line 149, ../../templates/sass/specific/_home.scss */
+.home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active ~ .owl-item.active .item {
+  left: auto;
+  width: auto;
+}
+/* line 153, ../../templates/sass/specific/_home.scss */
+.home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active ~ .owl-item.active .item .see_more {
+  opacity: 0;
+  visibility: hidden;
+}
+/* line 164, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active .item img {
   width: 100%;
   height: 100%;
 }
-/* line 158, ../../templates/sass/specific/_home.scss */
+/* line 172, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .item {
-  width: 140%;
   height: 100%;
+  position: relative;
   box-shadow: 0 0 20px -7px #0000007a;
 }
-/* line 162, ../../templates/sass/specific/_home.scss */
+/* line 176, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .item img {
   border-radius: 8px;
   object-fit: cover;
 }
-/* line 174, ../../templates/sass/specific/_home.scss */
+/* line 188, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel button[type="button"] {
   transition: all .4s;
   position: absolute;
@@ -276,19 +285,19 @@ footer .social a i {
   background-color: #37322e;
   padding: 20px;
 }
-/* line 182, ../../templates/sass/specific/_home.scss */
+/* line 196, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel button[type="button"].owl-prev {
   left: 29px;
 }
-/* line 185, ../../templates/sass/specific/_home.scss */
+/* line 199, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel button[type="button"].owl-next {
   right: 10px;
 }
-/* line 190, ../../templates/sass/specific/_home.scss */
+/* line 204, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel button[type="button"] i:before {
   color: white;
 }
-/* line 194, ../../templates/sass/specific/_home.scss */
+/* line 208, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel button[type="button"]:hover {
   background-color: #37322e6e;
 }
@@ -380,7 +389,21 @@ footer .social a i {
 .contact #block {
   margin: 55px 0;
 }
-/* line 13, ../../templates/sass/specific/_contact.scss */
+/* line 12, ../../templates/sass/specific/_contact.scss */
+.contact .messages {
+  top: -29px;
+  margin: 0 auto;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  background-color: black;
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  border-radius: 8px;
+}
+/* line 28, ../../templates/sass/specific/_contact.scss */
 .contact .contact_wrapper {
   width: 70%;
   height: 646px;
@@ -391,23 +414,23 @@ footer .social a i {
   background-color: #F7F7F7;
   box-shadow: 0 0 20px -7px #0000007a;
 }
-/* line 24, ../../templates/sass/specific/_contact.scss */
+/* line 39, ../../templates/sass/specific/_contact.scss */
 .contact .contact_wrapper .form_wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-/* line 30, ../../templates/sass/specific/_contact.scss */
+/* line 45, ../../templates/sass/specific/_contact.scss */
 .contact .contact_wrapper .form_wrapper form {
   width: 70%;
 }
-/* line 32, ../../templates/sass/specific/_contact.scss */
+/* line 47, ../../templates/sass/specific/_contact.scss */
 .contact .contact_wrapper .form_wrapper form div {
   margin-top: 20px;
   width: 100%;
 }
-/* line 37, ../../templates/sass/specific/_contact.scss */
+/* line 52, ../../templates/sass/specific/_contact.scss */
 .contact .contact_wrapper .form_wrapper form input, .contact .contact_wrapper .form_wrapper form textarea {
   width: 100%;
   padding: 15px;
@@ -415,11 +438,11 @@ footer .social a i {
   border: 1px solid black;
   resize: none;
 }
-/* line 47, ../../templates/sass/specific/_contact.scss */
+/* line 62, ../../templates/sass/specific/_contact.scss */
 .contact .contact_wrapper .form_wrapper form label {
   margin-top: 10px;
 }
-/* line 51, ../../templates/sass/specific/_contact.scss */
+/* line 66, ../../templates/sass/specific/_contact.scss */
 .contact .contact_wrapper .form_wrapper form input[type=submit] {
   width: 25%;
   margin-top: 15px;
@@ -429,6 +452,7 @@ footer .social a i {
   background-color: black;
   color: #F7F7F7;
   font-weight: bold;
+  border-radius: 8px;
 }
 
 /* line 4, ../../templates/sass/specific/_CV.scss */
@@ -594,34 +618,144 @@ footer .social a i {
   transition: all .4s;
 }
 
-/* line 2, ../../templates/sass/specific/_gallery.scss */
+/* line 1, ../../templates/sass/specific/_gallery.scss */
+.gallery {
+  overflow-x: hidden;
+}
+/* line 3, ../../templates/sass/specific/_gallery.scss */
 .gallery #block {
   margin: 150px 0;
 }
-/* line 5, ../../templates/sass/specific/_gallery.scss */
+/* line 6, ../../templates/sass/specific/_gallery.scss */
 .gallery #block .content_wrapper {
   width: 95%;
   margin: 0 auto;
   background-color: #f7f7f7;
   box-shadow: 0 0 20px -7px #0000007a;
 }
-/* line 11, ../../templates/sass/specific/_gallery.scss */
-.gallery #block .content_wrapper .title_wrapper {
-  float: left;
+/* line 13, ../../templates/sass/specific/_gallery.scss */
+.gallery #block .content_wrapper .description_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 19, ../../templates/sass/specific/_gallery.scss */
+.gallery #block .content_wrapper .description_wrapper .title_wrapper {
   position: relative;
-  background-color: red;
-  width: 25%;
+  width: 75%;
   height: 100%;
+  margin-left: 5px;
+  margin-top: 5px;
 }
-/* line 18, ../../templates/sass/specific/_gallery.scss */
-.gallery #block .content_wrapper .title_wrapper .title {
-  background-color: green;
+/* line 29, ../../templates/sass/specific/_gallery.scss */
+.gallery #block .content_wrapper .description_wrapper .title {
+  padding: 15px;
+  font-size: 50px;
 }
-/* line 22, ../../templates/sass/specific/_gallery.scss */
-.gallery #block .content_wrapper .title_wrapper .subtitle_wrapper {
-  background-color: blue;
+/* line 34, ../../templates/sass/specific/_gallery.scss */
+.gallery #block .content_wrapper .description_wrapper .subtitle_wrapper {
+  padding: 15px;
 }
-/* line 51, ../../templates/sass/specific/_gallery.scss */
-.gallery #block .content_wrapper .gallery_wrapper {
-  background: purple;
+/* line 37, ../../templates/sass/specific/_gallery.scss */
+.gallery #block .content_wrapper .description_wrapper .subtitle_wrapper h3 {
+  font-size: 25px;
+  padding-bottom: 5px;
+}
+/* line 42, ../../templates/sass/specific/_gallery.scss */
+.gallery #block .content_wrapper .description_wrapper .subtitle_wrapper .type {
+  font-size: 18px;
+}
+/* line 48, ../../templates/sass/specific/_gallery.scss */
+.gallery #block .content_wrapper .description_wrapper .date_wrapper {
+  padding: 15px;
+}
+/* line 50, ../../templates/sass/specific/_gallery.scss */
+.gallery #block .content_wrapper .description_wrapper .date_wrapper h3 {
+  font-size: 25px;
+  padding-bottom: 5px;
+}
+/* line 54, ../../templates/sass/specific/_gallery.scss */
+.gallery #block .content_wrapper .description_wrapper .date_wrapper .date {
+  font-size: 18px;
+}
+/* line 62, ../../templates/sass/specific/_gallery.scss */
+.gallery #block .content_wrapper .description_text {
+  height: 90%;
+  position: relative;
+  margin-left: 20px;
+  width: 100%;
+  top: -45px;
+}
+/* line 68, ../../templates/sass/specific/_gallery.scss */
+.gallery #block .content_wrapper .description_text p {
+  font-size: 20px;
+  line-height: 1.4;
+}
+/* line 82, ../../templates/sass/specific/_gallery.scss */
+.gallery #block .gallery_wrapper {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+}
+/* line 91, ../../templates/sass/specific/_gallery.scss */
+.gallery #block .gallery_wrapper .images_wrapper {
+  margin: 0 auto;
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(3, minmax(min-content, max-content));
+  width: 100%;
+  padding: 15px;
+}
+/* line 99, ../../templates/sass/specific/_gallery.scss */
+.gallery #block .gallery_wrapper .images_wrapper .img_wrapper {
+  display: block;
+  width: 98%;
+  padding: 3px;
+  border-radius: 5px;
+  transition: all .6s;
+  position: relative;
+}
+/* line 107, ../../templates/sass/specific/_gallery.scss */
+.gallery #block .gallery_wrapper .images_wrapper .img_wrapper:hover {
+  width: 100%;
+  z-index: 3;
+  margin: 2%;
+}
+/* line 115, ../../templates/sass/specific/_gallery.scss */
+.gallery #block .gallery_wrapper .images_wrapper .img_wrapper .modal.active {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  z-index: 9998;
+}
+/* line 127, ../../templates/sass/specific/_gallery.scss */
+.gallery #block .gallery_wrapper .images_wrapper .img_wrapper .modal.active img {
+  width: auto;
+  height: auto;
+  z-index: 9999;
+}
+/* line 134, ../../templates/sass/specific/_gallery.scss */
+.gallery #block .gallery_wrapper .images_wrapper .img_wrapper .modal.active:after {
+  content: '';
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.308);
+  z-index: 9998;
+}
+/* line 149, ../../templates/sass/specific/_gallery.scss */
+.gallery #block .gallery_wrapper .images_wrapper .img_wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
 }

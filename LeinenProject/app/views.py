@@ -14,7 +14,13 @@ def home_handler(request):
     })
 
 def about_handler(request):
-    return render(request,'about.html')
+
+    about=About.objects.all()
+    
+
+    return render(request,'about.html',{
+        'about':about
+    })
 
 
 def contacto_handler(request):
@@ -25,7 +31,17 @@ def contacto_handler(request):
         if form.is_valid():
             #limpiar los datos y sacar lo introducido
             data_form=form.cleaned_data
-            
+
+            contact=Contact(
+                name=data_form["name"],
+                mail=data_form["email"],
+                project=data_form["project"],
+                message=data_form["message"]
+                
+            )
+
+
+            contact.save()        
 
             messages.success(request,f"Mensaje mandado con exito")
 
@@ -77,7 +93,7 @@ def cv_handler(request):
 def portfolio_handler(request):
 
     albums=Album.objects.all()
-    print(albums)
+    
 
     return render(request,'portfolio.html', {
         'albums':albums

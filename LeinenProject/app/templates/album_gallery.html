@@ -5,42 +5,58 @@
 <body class="gallery ">
     <div class="content_wrapper">
         
-        <div class="title_wrapper">
-            <h1 class="title">
-                {{ album.title }}
-            </h1>
 
-            <div class="subtitle_wrapper">
-                <h3> Tipo de proyecto </h3>
+        <div class="description_wrapper">
+
+            <div class="title_wrapper">
+                <h1 class="title">
+                    {{ album.title }}
+                </h1>
+    
+                <div class="subtitle_wrapper">
+                    <h3> Tipo de proyecto </h3>
+                    
+                    <p class="type">
+                        {{ album.type }}
+                    </p>
+                </div>
+    
+                <div class="date_wrapper">
+                    <h3>Fecha</h3>
+    
+                    <p class="date">
+                        {{ album.date }}
+                    </p>
+    
+                </div>
+            </div>
+    
+    
+            <div class="description_text">
                 
-                <p class="type">
-                    {{ album.type }}
-                </p>
+                    <p>{{ album.description }}</p>
+                
             </div>
-
-            <div class="date_wrapper">
-                <h3>Fecha</h3>
-
-                <p class="date">
-                    {{ album.date }}
-                </p>
-
-            </div>
-
-            <div class="description_wrapper">
-                <p>{{ album.description }}</p>
-            </div>
-
         </div>
 
         
 
-        <div class="gallery_wrapper">
-            {% for picture in gallery  %}
-                
-                    <img src="{{ picture.image.url }}" alt="{{ album.title }}">
+        
 
-            {% endfor %}
+        <div class="gallery_wrapper">
+
+            <div class="images_wrapper">
+                {% for picture in gallery  %}
+                <div class="img_wrapper">
+                    <div class="modal">
+                        <img src="{{ picture.image.url }}" alt="{{ album.title }}">
+                    </div>
+                </div>
+    
+                {% endfor %}
+            </div>
+
+            
         </div>
     
     
