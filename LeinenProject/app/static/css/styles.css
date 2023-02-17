@@ -8,7 +8,7 @@ header {
   align-items: center;
   position: fixed;
   top: 0;
-  z-index: 999;
+  z-index: 9;
   transition: all .4s;
   color: black;
   background-color: white;
@@ -712,19 +712,27 @@ footer .social a i {
 /* line 99, ../../templates/sass/specific/_gallery.scss */
 .gallery #block .gallery_wrapper .images_wrapper .img_wrapper {
   display: block;
-  width: 98%;
+  width: fit-content;
   padding: 3px;
+  margin: 1%;
   border-radius: 5px;
-  transition: all .6s;
   position: relative;
 }
-/* line 107, ../../templates/sass/specific/_gallery.scss */
-.gallery #block .gallery_wrapper .images_wrapper .img_wrapper:hover {
+/* line 108, ../../templates/sass/specific/_gallery.scss */
+.gallery #block .gallery_wrapper .images_wrapper .img_wrapper img {
+  transition: all .6s;
+}
+/* line 111, ../../templates/sass/specific/_gallery.scss */
+.gallery #block .gallery_wrapper .images_wrapper .img_wrapper img:hover {
   width: 100%;
   z-index: 3;
   margin: 2%;
 }
 /* line 115, ../../templates/sass/specific/_gallery.scss */
+.gallery #block .gallery_wrapper .images_wrapper .img_wrapper img:hover img {
+  box-shadow: 0 0 20px -7px #0000007a;
+}
+/* line 124, ../../templates/sass/specific/_gallery.scss */
 .gallery #block .gallery_wrapper .images_wrapper .img_wrapper .modal.active {
   position: fixed;
   width: 100%;
@@ -736,13 +744,14 @@ footer .social a i {
   left: 0;
   z-index: 9998;
 }
-/* line 127, ../../templates/sass/specific/_gallery.scss */
+/* line 136, ../../templates/sass/specific/_gallery.scss */
 .gallery #block .gallery_wrapper .images_wrapper .img_wrapper .modal.active img {
+  transition: none;
   width: auto;
   height: auto;
   z-index: 9999;
 }
-/* line 134, ../../templates/sass/specific/_gallery.scss */
+/* line 144, ../../templates/sass/specific/_gallery.scss */
 .gallery #block .gallery_wrapper .images_wrapper .img_wrapper .modal.active:after {
   content: '';
   position: fixed;
@@ -753,7 +762,7 @@ footer .social a i {
   background-color: rgba(0, 0, 0, 0.308);
   z-index: 9998;
 }
-/* line 149, ../../templates/sass/specific/_gallery.scss */
+/* line 159, ../../templates/sass/specific/_gallery.scss */
 .gallery #block .gallery_wrapper .images_wrapper .img_wrapper img {
   max-width: 100%;
   max-height: 100%;
