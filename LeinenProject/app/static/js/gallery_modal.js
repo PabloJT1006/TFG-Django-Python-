@@ -32,14 +32,14 @@ document.querySelectorAll(".modal").forEach(el=>{
 });
 
 
-document.querySelectorAll(".modal img").forEach(el=>{
-    el.addEventListener("click", function(ev){
-        console.log("klk")
+// document.querySelectorAll(".modal img").forEach(el=>{
+//     el.addEventListener("click", function(ev){
+//         console.log("klk")
 
-    this.parentNode.classList.remove("active");
-    })
+//     this.parentNode.classList.remove("active");
+//     })
 
-});
+// });
 
 
 // if (modal.className == "active"){

@@ -4,8 +4,18 @@
 
 {% block content %}
 <body class="home">
-    <div class="banner_home" >
-        BANNER-HOME la conccha de tu pputa madre<i class="fa-solid fa-chevron-right"></i>
+    <div class="banner_home">
+        <div class="title_wrapper">
+        {% for home in home  %}
+            <h1> {{home.banner_title|safe}} </h1>
+            <h3>{% if home.banner_subtitle  %} {{home.banner_subtitle|safe}} {% endif %}</h3>
+        {% endfor %}
+        </div>
+        <div class="img_wrapper">
+            {% for home  in home  %}
+                <img src="{{home.banner_img.url}}" alt="img prensentation">
+            {% endfor %}
+        </div>
     </div>
     
     <div class="desc_wrapper">

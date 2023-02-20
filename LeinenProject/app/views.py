@@ -8,9 +8,11 @@ from app.models import *
 
 def home_handler(request):
     albums=Album.objects.all()
+    home=Home.objects.all()
 
     return render(request,'home.html',{
-        'albums':albums
+        'albums':albums,
+        'home':home
     })
 
 def about_handler(request):
