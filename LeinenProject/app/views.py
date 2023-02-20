@@ -8,7 +8,7 @@ from app.models import *
 
 def home_handler(request):
     albums=Album.objects.all()
-    home=Home.objects.all()
+    home=Home.objects.filter(active=True)
 
     return render(request,'home.html',{
         'albums':albums,
@@ -17,7 +17,7 @@ def home_handler(request):
 
 def about_handler(request):
 
-    about=About.objects.all()
+    about=About.objects.filter(active=True)
     
 
     return render(request,'about.html',{

@@ -45,10 +45,12 @@
             
             h1{
                 font-size: 60px;
+                text-align: center;
             }
 
             h3{
                 font-size: 40px;
+                text-align: center;
             }
         }
 
@@ -214,13 +216,17 @@
             button[type="button"]{
                 transition:  all .4s;
                 position: absolute;
-                top: 45%;
+                bottom: 46%;
                 font-size: 60px;
-                background-color: #37322e;
-                padding: 20px;
+                background-color:#37322e9e;
+                border-radius: 10px;
+
+                i{
+                    padding: 7px;
+                }
                 
                 &.owl-prev{
-                    left: 29px;
+                    left: 10px;
                 }
                 &.owl-next{
                     right: 10px;
@@ -232,7 +238,7 @@
                         }
                         
                         &:hover{
-                            background-color:#37322e6e;
+                            background-color:#37322e;
                         }
                         
                     }

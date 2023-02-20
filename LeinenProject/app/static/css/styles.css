@@ -166,17 +166,19 @@ footer .social a i {
 /* line 46, ../../templates/sass/specific/_home.scss */
 .home #block .banner_home .title_wrapper h1 {
   font-size: 60px;
+  text-align: center;
 }
-/* line 50, ../../templates/sass/specific/_home.scss */
+/* line 51, ../../templates/sass/specific/_home.scss */
 .home #block .banner_home .title_wrapper h3 {
   font-size: 40px;
+  text-align: center;
 }
-/* line 57, ../../templates/sass/specific/_home.scss */
+/* line 59, ../../templates/sass/specific/_home.scss */
 .home #block .banner_home .img_wrapper {
   position: relative;
   z-index: -4;
 }
-/* line 67, ../../templates/sass/specific/_home.scss */
+/* line 69, ../../templates/sass/specific/_home.scss */
 .home #block .desc_wrapper {
   height: 530px;
   display: flex;
@@ -184,19 +186,19 @@ footer .social a i {
   align-items: center;
   background-color: #37322E;
 }
-/* line 74, ../../templates/sass/specific/_home.scss */
+/* line 76, ../../templates/sass/specific/_home.scss */
 .home #block .desc_wrapper .content {
   height: 300px;
   width: 50%;
   text-align: center;
 }
-/* line 80, ../../templates/sass/specific/_home.scss */
+/* line 82, ../../templates/sass/specific/_home.scss */
 .home #block .desc_wrapper .content .icon {
   width: fit-content;
   height: fit-content;
   margin: 0 auto;
 }
-/* line 86, ../../templates/sass/specific/_home.scss */
+/* line 88, ../../templates/sass/specific/_home.scss */
 .home #block .desc_wrapper .content .desc {
   width: fit-content;
   height: fit-content;
@@ -205,11 +207,11 @@ footer .social a i {
   line-height: 30px;
   color: white;
 }
-/* line 95, ../../templates/sass/specific/_home.scss */
+/* line 97, ../../templates/sass/specific/_home.scss */
 .home #block .desc_wrapper .content .desc .subtitle {
   margin-top: 30px;
 }
-/* line 105, ../../templates/sass/specific/_home.scss */
+/* line 107, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper {
   width: auto;
   height: 700px;
@@ -217,25 +219,25 @@ footer .social a i {
   justify-content: center;
   align-items: center;
 }
-/* line 113, ../../templates/sass/specific/_home.scss */
+/* line 115, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel {
   padding: 30px 50px;
   width: 90%;
 }
-/* line 118, ../../templates/sass/specific/_home.scss */
+/* line 120, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-stage-outer {
   height: 600px;
   display: grid;
   align-items: center;
 }
-/* line 125, ../../templates/sass/specific/_home.scss */
+/* line 127, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-stage {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-/* line 134, ../../templates/sass/specific/_home.scss */
+/* line 136, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-item .see_more {
   display: flex;
   justify-content: center;
@@ -251,74 +253,78 @@ footer .social a i {
   transition: all .5s ease-out;
   border-radius: 8px;
 }
-/* line 153, ../../templates/sass/specific/_home.scss */
+/* line 155, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active {
   z-index: 3;
 }
-/* line 157, ../../templates/sass/specific/_home.scss */
+/* line 159, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active .item {
   width: 140%;
   left: -22%;
 }
-/* line 161, ../../templates/sass/specific/_home.scss */
+/* line 163, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active .item:hover .see_more {
   opacity: 1;
   visibility: visible;
 }
-/* line 170, ../../templates/sass/specific/_home.scss */
+/* line 172, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active ~ .owl-item.active {
   z-index: 1;
 }
-/* line 175, ../../templates/sass/specific/_home.scss */
+/* line 177, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active ~ .owl-item.active .item {
   left: auto;
   width: auto;
 }
-/* line 179, ../../templates/sass/specific/_home.scss */
+/* line 181, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active ~ .owl-item.active .item .see_more {
   opacity: 0;
   visibility: hidden;
 }
-/* line 190, ../../templates/sass/specific/_home.scss */
+/* line 192, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active .item img {
   width: 100%;
   height: 100%;
 }
-/* line 198, ../../templates/sass/specific/_home.scss */
+/* line 200, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .item {
   height: 100%;
   position: relative;
   box-shadow: 0 0 20px -7px #0000007a;
 }
-/* line 202, ../../templates/sass/specific/_home.scss */
+/* line 204, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .item img {
   border-radius: 8px;
   object-fit: cover;
 }
-/* line 214, ../../templates/sass/specific/_home.scss */
+/* line 216, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel button[type="button"] {
   transition: all .4s;
   position: absolute;
-  top: 45%;
+  bottom: 46%;
   font-size: 60px;
-  background-color: #37322e;
-  padding: 20px;
+  background-color: #37322e9e;
+  border-radius: 10px;
 }
-/* line 222, ../../templates/sass/specific/_home.scss */
+/* line 224, ../../templates/sass/specific/_home.scss */
+.home #block .carousel_wrapper .owl-carousel button[type="button"] i {
+  padding: 7px;
+}
+/* line 228, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel button[type="button"].owl-prev {
-  left: 29px;
+  left: 10px;
 }
-/* line 225, ../../templates/sass/specific/_home.scss */
+/* line 231, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel button[type="button"].owl-next {
   right: 10px;
 }
-/* line 230, ../../templates/sass/specific/_home.scss */
+/* line 236, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel button[type="button"] i:before {
   color: white;
 }
-/* line 234, ../../templates/sass/specific/_home.scss */
+/* line 240, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel button[type="button"]:hover {
-  background-color: #37322e6e;
+  background-color: #37322e;
 }
 
 /* line 2, ../../templates/sass/specific/_about.scss */

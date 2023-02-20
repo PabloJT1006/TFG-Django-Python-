@@ -52,4 +52,3 @@ document.querySelectorAll(".modal").forEach(el=>{
 //     });
 // }
 
-console.log(modal)

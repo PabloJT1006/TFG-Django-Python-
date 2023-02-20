@@ -83,6 +83,9 @@ class Home(models.Model):
     banner_title = models.CharField(max_length=50, verbose_name="Titulo banner")
     banner_subtitle = models.CharField(max_length=50, verbose_name="Subtitulo banner")
     presentation_text = models.TextField(max_length=500, verbose_name="Texto Presentacion")
+    active=models.BooleanField(verbose_name="Publico?",default=False)
+
+
 
 
     class Meta():
@@ -118,7 +121,8 @@ class About(models.Model):
     subtitle=models.CharField(max_length=150,verbose_name="Subititulo")
     content=models.TextField(max_length=9999,verbose_name="Descripcion")
     img=models.ImageField(verbose_name="Imagen",default="null",upload_to="media/" )
-
+    active=models.BooleanField(verbose_name="Publico?",default=False)
+    
     class Meta():
         verbose_name_plural="About"
 

@@ -40,6 +40,7 @@ $('.owl-carousel').owlCarousel({
     nav:true,
     items:3,
     margin:5,
+    responsive:true,
     fluidSpeed:true,
 
     navText:[
