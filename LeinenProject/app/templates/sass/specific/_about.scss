@@ -13,7 +13,7 @@
             align-items: center;
             background-color: #F7F7F7;
             box-shadow: 0 0 20px -7px #0000007a;
-            .image{
+            .img_wrapper{
                 width: 50%;
                 height: 100%;
                 position: relative;
@@ -29,18 +29,16 @@
             .desc_wrapper{
                 width: 50%;
                 height: 100%;
-                overflow: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
                 .content{
-                    margin: 0 auto;
                     position: relative;
-                    width: fit-content;
-                    padding: 40px;
-                    top:90px;
-                    left: 40px;
+                    margin: 0 50px;
 
                     .title{
-                        word-break: normal;
+                        
                         
                         h1{
                             font-size: 40px;
@@ -49,7 +47,6 @@
                     }
     
                     .subtitle{
-                        width:fit-content;
                         margin: 10px 0;
                         h3{
                             font-size: 18px;
@@ -58,9 +55,6 @@
                     }
     
                     .description{
-                        width: 460px;
-                        height: 253px;
-                        
                         p{
                             line-height:1.88;
                             font-size: 15px;
@@ -72,6 +66,35 @@
             }
         }
     }
+
+
+    @media (max-width: 576px ){
+        .section_wrapper{
+            flex-direction: column;
+            padding-bottom: 15px;
+
+            .img_wrapper{
+                width: 100% !important;
+                
+            }
+
+            .desc_wrapper{
+                width: auto !important;
+                
+                .content{
+                    margin: 0 25px !important;
+
+                    .description{
+                        
+                        p{
+                            line-height: 1.2 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 
 
 }
