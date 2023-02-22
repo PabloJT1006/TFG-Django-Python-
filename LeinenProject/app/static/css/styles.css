@@ -504,6 +504,35 @@ footer .social a i {
   font-weight: bold;
   border-radius: 8px;
 }
+@media (max-width: 576px) {
+  /* line 88, ../../templates/sass/specific/_contact.scss */
+  .contact .contact_wrapper {
+    width: 95% !important;
+  }
+  /* line 90, ../../templates/sass/specific/_contact.scss */
+  .contact .contact_wrapper .form_wrapper {
+    width: 85% !important;
+  }
+  /* line 93, ../../templates/sass/specific/_contact.scss */
+  .contact .contact_wrapper .form_wrapper form {
+    width: 100% !important;
+  }
+  /* line 96, ../../templates/sass/specific/_contact.scss */
+  .contact .contact_wrapper .form_wrapper form input[type=submit] {
+    width: 50% !important;
+    right: -25%;
+    float: none;
+  }
+  /* line 102, ../../templates/sass/specific/_contact.scss */
+  .contact .contact_wrapper .form_wrapper form div {
+    width: 90% !important;
+    margin: 20px auto !important;
+  }
+  /* line 107, ../../templates/sass/specific/_contact.scss */
+  .contact .contact_wrapper .form_wrapper form input, .contact .contact_wrapper .form_wrapper form textarea {
+    width: 90% !important;
+  }
+}
 
 /* line 4, ../../templates/sass/specific/_CV.scss */
 .cv #block {

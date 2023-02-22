@@ -84,4 +84,34 @@
         
     }
 
+    @media(max-width:576px){
+        .contact_wrapper{
+            width: 95% !important;
+            .form_wrapper{
+                width: 85% !important;
+
+                form{
+                    width: 100% !important;
+                    
+                    input[type=submit]{
+                        width: 50% !important;
+                        right: -25%;
+                        float: none;
+                    }
+
+                    div{
+                        width: 90% !important;
+                        margin: 20px auto !important;
+                    }
+
+                    input,textarea{
+                        width: 90% !important;
+                        
+                    }
+                }
+            }
+        }
+
+    }
+
 }
