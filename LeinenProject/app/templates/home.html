@@ -37,16 +37,30 @@
 
 
     <div class="carousel_wrapper">
+        <div class="title_wrapper">
+            {% for home in home  %}
+                <h1>{{ home.gallery_title }}</h1>
+            {% endfor %}
+
+        </div>
+
         <div class="owl-carousel owl-theme">
 
             {% for album in albums %}
                 <div class="item">
-                        <img src="{{ album.front.url }}" alt="{{ album.title }}">
+                    
+                    <img src="{{ album.front.url }}" alt="{{ album.title }}">
+                    <a href="{% url 'gallery' album.id %}">
                         <div class="see_more">
-                            <a href="{% url 'gallery' album.id %}">
-                                <h3>Ver más --></h3>
-                            </a>  
+                            <h3>Ver más --></h3>
                         </div>
+                    </a>  
+                    
+                    <a class="mobile_a" href="{% url 'gallery' album.id %}">
+                        <h3>Ver más</h3>
+                    </a>
+                    
+
                 </div>
             {% endfor %}
 

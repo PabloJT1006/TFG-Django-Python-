@@ -81,9 +81,10 @@
         background-color: #37322E;
         
         .content{
-            height: 300px;
+            
             width: 50%;
             text-align: center;
+            bottom: 10px;
             position: relative;
             
             
@@ -118,6 +119,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+        
+        .title_wrapper{
+            position: relative;
+            top: 100px;
+
+        }
         
 
         .owl-carousel{
@@ -208,9 +216,14 @@
             .item{
                 height: 100%;
                 position: relative;
-                box-shadow: 0 0 20px -7px #0000007a;
+                
+                .mobile_a{
+                    display: none;
+                }
+                
                 img{
                     
+                    box-shadow: 0 0 20px -7px #0000007a;
                     border-radius: 8px;
                     object-fit: cover;
                     
@@ -259,13 +272,43 @@
 
         //arreglos mobile
         @media (max-width: 576px){
+
+            .banner_home{
+                .title_wrapper{
+                    width: 83% !important;
+                    top: 285px;
+                }
+            }
+
+
             .desc_wrapper{
                 .content{
-                    bottom: 25px;
+                    bottom: -5px;
                     
                 }
             }
+
+            .mobile_a{
+                display:block !important;
+                position: relative;
+                width: fit-content;
+                margin: 0 auto;
+                top: 35px;
+
+                h3{
+                    text-decoration: none;
+                    font-size: 25px;
+                    color: #1b1e1f;
+                }
+            }
+
+            .carousel_wrapper{
+                .title_wrapper{
+                    top:123px !important;
+                }
+            }
         }
+
 
     
     }

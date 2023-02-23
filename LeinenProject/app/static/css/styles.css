@@ -92,21 +92,21 @@ footer {
   color: #d1d4d6;
   text-align: center;
 }
-/* line 11, ../../templates/sass/generic/_footer.scss */
+/* line 12, ../../templates/sass/generic/_footer.scss */
 footer div {
   margin: 0 auto;
   margin-top: 10px;
 }
-/* line 16, ../../templates/sass/generic/_footer.scss */
+/* line 17, ../../templates/sass/generic/_footer.scss */
 footer .social {
   width: 50%;
   font-size: 30px;
 }
-/* line 20, ../../templates/sass/generic/_footer.scss */
+/* line 21, ../../templates/sass/generic/_footer.scss */
 footer .social a {
   margin: auto 10px;
 }
-/* line 23, ../../templates/sass/generic/_footer.scss */
+/* line 24, ../../templates/sass/generic/_footer.scss */
 footer .social a i {
   color: #d1d4d6;
 }
@@ -195,18 +195,18 @@ footer .social a i {
 }
 /* line 83, ../../templates/sass/specific/_home.scss */
 .home #block .desc_wrapper .content {
-  height: 300px;
   width: 50%;
   text-align: center;
+  bottom: 10px;
   position: relative;
 }
-/* line 90, ../../templates/sass/specific/_home.scss */
+/* line 91, ../../templates/sass/specific/_home.scss */
 .home #block .desc_wrapper .content .icon {
   width: fit-content;
   height: fit-content;
   margin: 0 auto;
 }
-/* line 96, ../../templates/sass/specific/_home.scss */
+/* line 97, ../../templates/sass/specific/_home.scss */
 .home #block .desc_wrapper .content .desc {
   width: fit-content;
   height: fit-content;
@@ -215,37 +215,43 @@ footer .social a i {
   line-height: 30px;
   color: white;
 }
-/* line 105, ../../templates/sass/specific/_home.scss */
+/* line 106, ../../templates/sass/specific/_home.scss */
 .home #block .desc_wrapper .content .desc .subtitle {
   margin-top: 30px;
 }
-/* line 115, ../../templates/sass/specific/_home.scss */
+/* line 116, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper {
   width: auto;
   height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
-/* line 123, ../../templates/sass/specific/_home.scss */
+/* line 124, ../../templates/sass/specific/_home.scss */
+.home #block .carousel_wrapper .title_wrapper {
+  position: relative;
+  top: 100px;
+}
+/* line 131, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel {
   padding: 30px 50px;
   width: 90%;
 }
-/* line 128, ../../templates/sass/specific/_home.scss */
+/* line 136, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-stage-outer {
   height: 600px;
   display: grid;
   align-items: center;
 }
-/* line 135, ../../templates/sass/specific/_home.scss */
+/* line 143, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-stage {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-/* line 144, ../../templates/sass/specific/_home.scss */
+/* line 152, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-item .see_more {
   display: flex;
   justify-content: center;
@@ -261,51 +267,55 @@ footer .social a i {
   transition: all .5s ease-out;
   border-radius: 8px;
 }
-/* line 163, ../../templates/sass/specific/_home.scss */
+/* line 171, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active {
   z-index: 3;
 }
-/* line 167, ../../templates/sass/specific/_home.scss */
+/* line 175, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active .item {
   width: 140%;
   left: -22%;
 }
-/* line 171, ../../templates/sass/specific/_home.scss */
+/* line 179, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active .item:hover .see_more {
   opacity: 1;
   visibility: visible;
 }
-/* line 180, ../../templates/sass/specific/_home.scss */
+/* line 188, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active ~ .owl-item.active {
   z-index: 1;
 }
-/* line 185, ../../templates/sass/specific/_home.scss */
+/* line 193, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active ~ .owl-item.active .item {
   left: auto;
   width: auto;
 }
-/* line 189, ../../templates/sass/specific/_home.scss */
+/* line 197, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active ~ .owl-item.active .item .see_more {
   opacity: 0;
   visibility: hidden;
 }
-/* line 200, ../../templates/sass/specific/_home.scss */
+/* line 208, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .owl-item.active + .owl-item.active .item img {
   width: 100%;
   height: 100%;
 }
-/* line 208, ../../templates/sass/specific/_home.scss */
+/* line 216, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .item {
   height: 100%;
   position: relative;
-  box-shadow: 0 0 20px -7px #0000007a;
 }
-/* line 212, ../../templates/sass/specific/_home.scss */
+/* line 220, ../../templates/sass/specific/_home.scss */
+.home #block .carousel_wrapper .owl-carousel .item .mobile_a {
+  display: none;
+}
+/* line 224, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel .item img {
+  box-shadow: 0 0 20px -7px #0000007a;
   border-radius: 8px;
   object-fit: cover;
 }
-/* line 224, ../../templates/sass/specific/_home.scss */
+/* line 237, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel button[type="button"] {
   transition: all .4s;
   position: absolute;
@@ -314,30 +324,53 @@ footer .social a i {
   background-color: #37322e9e;
   border-radius: 10px;
 }
-/* line 232, ../../templates/sass/specific/_home.scss */
+/* line 245, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel button[type="button"] i {
   padding: 7px;
 }
-/* line 236, ../../templates/sass/specific/_home.scss */
+/* line 249, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel button[type="button"].owl-prev {
   left: 10px;
 }
-/* line 239, ../../templates/sass/specific/_home.scss */
+/* line 252, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel button[type="button"].owl-next {
   right: 10px;
 }
-/* line 244, ../../templates/sass/specific/_home.scss */
+/* line 257, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel button[type="button"] i:before {
   color: white;
 }
-/* line 248, ../../templates/sass/specific/_home.scss */
+/* line 261, ../../templates/sass/specific/_home.scss */
 .home #block .carousel_wrapper .owl-carousel button[type="button"]:hover {
   background-color: #37322e;
 }
 @media (max-width: 576px) {
-  /* line 263, ../../templates/sass/specific/_home.scss */
+  /* line 277, ../../templates/sass/specific/_home.scss */
+  .home .banner_home .title_wrapper {
+    width: 83% !important;
+    top: 285px;
+  }
+  /* line 285, ../../templates/sass/specific/_home.scss */
   .home .desc_wrapper .content {
-    bottom: 25px;
+    bottom: -5px;
+  }
+  /* line 291, ../../templates/sass/specific/_home.scss */
+  .home .mobile_a {
+    display: block !important;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    top: 35px;
+  }
+  /* line 298, ../../templates/sass/specific/_home.scss */
+  .home .mobile_a h3 {
+    text-decoration: none;
+    font-size: 25px;
+    color: #1b1e1f;
+  }
+  /* line 306, ../../templates/sass/specific/_home.scss */
+  .home .carousel_wrapper .title_wrapper {
+    top: 123px !important;
   }
 }
 
@@ -420,8 +453,13 @@ footer .social a i {
   /* line 84, ../../templates/sass/specific/_about.scss */
   .about .section_wrapper .desc_wrapper .content {
     margin: 0 25px !important;
+    padding: 10px 0;
   }
-  /* line 89, ../../templates/sass/specific/_about.scss */
+  /* line 88, ../../templates/sass/specific/_about.scss */
+  .about .section_wrapper .desc_wrapper .content .subtitle {
+    margin: 5px 0 !important;
+  }
+  /* line 94, ../../templates/sass/specific/_about.scss */
   .about .section_wrapper .desc_wrapper .content .description p {
     line-height: 1.2 !important;
   }

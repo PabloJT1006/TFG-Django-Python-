@@ -83,6 +83,7 @@ class Home(models.Model):
     banner_title = models.CharField(max_length=50, verbose_name="Titulo banner")
     banner_subtitle = models.CharField(max_length=50, verbose_name="Subtitulo banner")
     presentation_text = models.TextField(max_length=500, verbose_name="Texto Presentacion")
+    gallery_title = models.CharField(max_length=50, verbose_name="Tito galeria home")
     active=models.BooleanField(verbose_name="Publico?",default=False)
 
 
