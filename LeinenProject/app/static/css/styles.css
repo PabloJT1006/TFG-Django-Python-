@@ -372,6 +372,14 @@ footer .social a i {
   .home .carousel_wrapper .title_wrapper {
     top: 123px !important;
   }
+  /* line 310, ../../templates/sass/specific/_home.scss */
+  .home .carousel_wrapper .owl-prev {
+    left: 26px !important;
+  }
+  /* line 314, ../../templates/sass/specific/_home.scss */
+  .home .carousel_wrapper .owl-next {
+    right: 27px !important;
+  }
 }
 
 /* line 2, ../../templates/sass/specific/_about.scss */
@@ -890,4 +898,20 @@ footer .social a i {
   max-width: 100%;
   max-height: 100%;
   border-radius: 5px;
+}
+@media (max-width: 576px) {
+  /* line 178, ../../templates/sass/specific/_gallery.scss */
+  .gallery .description_wrapper {
+    align-items: flex-start !important;
+    flex-direction: column;
+  }
+  /* line 182, ../../templates/sass/specific/_gallery.scss */
+  .gallery .description_wrapper .description_text {
+    width: auto !important;
+    padding-right: 10px;
+  }
+  /* line 189, ../../templates/sass/specific/_gallery.scss */
+  .gallery .images_wrapper {
+    grid-template-columns: auto !important;
+  }
 }

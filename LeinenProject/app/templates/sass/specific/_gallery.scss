@@ -172,4 +172,24 @@
             }
 
         }
+
+
+        @media(max-width: 576px){
+            .description_wrapper{
+                align-items: flex-start !important;
+                flex-direction: column;
+
+                .description_text{
+                    width: auto !important;
+                    padding-right: 10px;
+                }
+
+            }
+
+            .images_wrapper{
+                grid-template-columns: auto !important;
+            }
+        }
+
+
     }
