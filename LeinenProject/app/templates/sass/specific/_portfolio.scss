@@ -8,7 +8,6 @@
             margin: 0 auto;
             display: flex;
             justify-content: center;
-            align-items: center;
             align-content: center;
             flex-direction: column;
             background-color: #f7f7f7;
@@ -75,4 +74,14 @@
 
         }
     }
+
+    @media(max-width:576px){
+        .content_wrapper{
+            grid-template-columns: none !important;
+            grid-gap: 40px !important;
+            grid-auto-rows: auto !important;
+
+        }
+    }
+
 }
