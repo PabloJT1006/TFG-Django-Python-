@@ -62,3 +62,16 @@ $('.owl-carousel').owlCarousel({
 })
 
 // video carousel
+
+
+
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    // que se le añada al body de la home la clase mobile, que lo unico que hara será añadirle el boton de ver mas 
+    console.log("klk desde mobiel");
+    if (document.body.className == 'home'){
+        document.body.classList.add("mobile");
+    }
+
+  } else {
+    // code for desktop devices
+  }
