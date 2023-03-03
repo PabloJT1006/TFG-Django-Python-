@@ -33,3 +33,11 @@ admin.site.register(Home)
 admin.site.register(Videos)
 admin.site.register(About)
 # admin.site.register(Album,AlbumAdmin)
+
+
+#Personaliz
+# acion del panel de administrsacion
+admin_title ="Titulo AdminPanel"
+admin.site.site_header=admin_title
+admin.site.site_title=admin_title
+admin.site.index_title=admin_title
