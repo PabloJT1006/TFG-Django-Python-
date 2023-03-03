@@ -111,12 +111,13 @@ header{
         ul{
             display: block !important;
             width: fit-content;
-            margin: 88px auto 0 auto;
+            margin: 58px auto 0 auto;
             text-align: center;
             transition: all .5s;
             opacity: 0;
 
             li{
+                margin: 12px 0;
                 a{
                     margin-bottom: 12px;
                 }
@@ -127,7 +128,7 @@ header{
 
 
     nav.active{
-        height: 450px;
+        height: 350px;
 
         ul{
             opacity: 1;

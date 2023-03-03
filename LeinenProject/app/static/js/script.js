@@ -84,3 +84,25 @@ hamburger.onclick = function(){
     navBar.classList.toggle("active");
     header.classList.add('solid');
 }
+
+
+if(/Android|iPad|Windows NT|Silk/i.test(navigator.userAgent) && !/Mobile/i.test(navigator.userAgent)) {
+    console.log("asdfasdfasf");
+    if (document.body.className == "about") {
+        console.log("entraste")
+        document.body.classList.add("tablet");
+    }
+  } else {
+    // code for non-tablet devices
+  }
+
+if(/iPad/i.test(navigator.userAgent)) {
+    console.log("asdfasdfasf");
+    if (document.body.className == "about") {
+        console.log("entraste")
+        document.body.classList.add("tablet");
+    }
+ 
+} else {
+    // code for non-iPad devices
+}
