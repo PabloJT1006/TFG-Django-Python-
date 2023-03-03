@@ -65,13 +65,22 @@ $('.owl-carousel').owlCarousel({
 
 
 
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    // que se le añada al body de la home la clase mobile, que lo unico que hara será añadirle el boton de ver mas 
-    console.log("klk desde mobiel");
-    if (document.body.className == 'home'){
-        document.body.classList.add("mobile");
-    }
+// if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+//     // que se le añada al body de la home la clase mobile, que lo unico que hara será añadirle el boton de ver mas 
+//     console.log("klk desde mobiel");
+//     if (document.body.className == 'home'){
+//         document.body.classList.add("mobile");
+//     }
 
-  } else {
-    // code for desktop devices
-  }
+//   } else {
+//     // code for desktop devices
+//   }
+
+
+//Configuracion header responsive
+hamburger = document.querySelector(".hamburguer");
+hamburger.onclick = function(){
+    navBar = document.querySelector("nav");
+    navBar.classList.toggle("active");
+    header.classList.add('solid');
+}

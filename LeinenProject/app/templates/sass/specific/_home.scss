@@ -7,11 +7,23 @@
         
         border: none;
 
+        .hamburguer .line{
+            background-color: #d1d4d6;
+        }
+
         
 
         &.solid{
-            background-color:#d1d4d6 !important ;
+            background-color:white !important ;
             color: black;
+
+            .hamburguer .line{
+                background-color: black;
+            }
+            
+            nav{
+                background-color: white;
+            }
             
             a{
                 color:black;
@@ -21,6 +33,12 @@
     a{
         color: #d1d4d6;
     }
+
+    nav{
+        background-color: transparent ;
+
+    }
+
 }
 
 #block{
