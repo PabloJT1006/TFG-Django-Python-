@@ -1,20 +1,9 @@
 if (document.body.className == 'home'){
     const header = document.querySelector('header');
-    console.log(header)
+    
     let prevY= window.scrollY;
 
     window.addEventListener('scroll',function(){
-        // if (prevY > window.scrollY){
-            
-        //     header.classList.remove('off');
-        //     console.log('subiendo');
-        // }
-        // else {
-        //     console.log(header)
-        //     header.classList.add('off');
-        //     console.log('bajando');
-        // }
-
 
         if (window.scrollY > 70){
             header.classList.add('solid');
@@ -22,12 +11,19 @@ if (document.body.className == 'home'){
             header.classList.remove('solid');
         }
         prevY=window.scrollY;
-
-
+        
+        
     });
-
+    
 }
 
+//Configuracion header responsive
+hamburger = document.querySelector(".hamburguer");
+hamburger.onclick = function(){
+    navBar = document.querySelector("nav");
+    navBar.classList.toggle("active");
+    header.classList.add('solid');
+}
 //Configuracion del carousel
 
 const nextIcon= '<i class="fa-solid fa-chevron-right"></i>';
@@ -77,32 +73,20 @@ $('.owl-carousel').owlCarousel({
 //   }
 
 
-//Configuracion header responsive
-hamburger = document.querySelector(".hamburguer");
-hamburger.onclick = function(){
-    navBar = document.querySelector("nav");
-    navBar.classList.toggle("active");
-    header.classList.add('solid');
-}
 
 
 if(/Android|iPad|Windows NT|Silk/i.test(navigator.userAgent) && !/Mobile/i.test(navigator.userAgent)) {
-    console.log("asdfasdfasf");
+    
     if (document.body.className == "about") {
-        console.log("entraste")
+        
         document.body.classList.add("tablet");
     }
-  } else {
-    // code for non-tablet devices
-  }
+  } 
 
 if(/iPad/i.test(navigator.userAgent)) {
-    console.log("asdfasdfasf");
     if (document.body.className == "about") {
-        console.log("entraste")
+        
         document.body.classList.add("tablet");
     }
  
-} else {
-    // code for non-iPad devices
-}
+} 

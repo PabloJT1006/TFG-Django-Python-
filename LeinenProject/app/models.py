@@ -95,7 +95,7 @@ class Home(models.Model):
 
 
    
-   
+#Posible adicion
 class Videos(models.Model):   
     iframes = models.CharField(max_length=999,verbose_name="Iframe del video")
     title = models.CharField(max_length=50,verbose_name="Titulo del video")
