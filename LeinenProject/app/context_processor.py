@@ -6,3 +6,4 @@ def get_album(request):
     return {
         'albums':albums 
     }
+    
